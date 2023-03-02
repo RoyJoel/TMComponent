@@ -1,7 +1,7 @@
 {
   "name": "TMComponent",
   "version": "0.1.0",
-  "summary": "Component lib for TennisMoment.",
+  "summary": "Some components for TennisMoment",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/RoyJoel/TMComponent",
   "license": {
@@ -18,5 +18,14 @@
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "TMComponent/Classes/**/*"
+  "swift_versions": [
+    "5.0"
+  ],
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
+  "source_files": "TMComponent/Classes/**/*",
+  "swift_version": "5.0"
 }
