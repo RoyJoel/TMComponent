@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'TMComponent_Example' do
+  pod 'TMComponent', :path => '../'
+
+  target 'TMComponent_Tests' do
+    inherit! :search_paths
+    
+    pod 'SnapKit', '~> 5.0.0'
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end

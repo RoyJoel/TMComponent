@@ -1,0 +1,31 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SnapKit (5.0.1)
+  - TMComponent (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - SnapKit (~> 5.0.0)
+  - TMComponent (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - SnapKit
+
+EXTERNAL SOURCES:
+  TMComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TMComponent: d19cae63fe93667a95fbabb5821903fbfd19661a
+
+PODFILE CHECKSUM: c2f2c3a67d73b65d58243c711f1b76a5c0b81b3c
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,22 @@
+{
+  "name": "TMComponent",
+  "version": "0.1.0",
+  "summary": "Component lib for TennisMoment.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/RoyJoel/TMComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RoyJoel": "1573989249@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/RoyJoel/TMComponent.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "TMComponent/Classes/**/*"
+}
