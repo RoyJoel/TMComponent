@@ -11,7 +11,7 @@ import UIKit
 
 /// 基本信息视图，使用时需设置宽高，图片大小将随之变化
 open class TMInfoView: TMView {
-    public var config = TMInfoViewConfig(iconName: nil, name: "")
+    public var config = TMInfoViewConfig(icon: "", name: "")
 
     private lazy var iconImage: UIImageView = {
         var image = UIImageView()
@@ -27,7 +27,7 @@ open class TMInfoView: TMView {
 
     public func setup(with config: TMInfoViewConfig) {
         self.config = config
-        
+
         setupUI()
         setupEvent(config: config)
     }
@@ -55,12 +55,8 @@ open class TMInfoView: TMView {
     }
 
     private func setupEvent(config: TMInfoViewConfig) {
-        if config.iconName == nil {
-            iconImage.image = UIImage(systemName: "person")
-        } else {
-            iconImage.image = UIImage(named: config.iconName ?? "person")
-            iconImage.contentMode = .scaleAspectFill
-        }
+        iconImage.image = UIImage(named: config.icon)
+        iconImage.contentMode = .scaleAspectFill
         if config.name == "" {
             nameView.isHidden = true
         } else {
@@ -69,7 +65,14 @@ open class TMInfoView: TMView {
         }
     }
 
-    override public func scaleTo(_ isEnlarge: Bool) {
+    public func updateInfo(with icon: String, named name: String) {
+        config.icon = icon
+        config.name = name
+        iconImage.image = UIImage(named: config.icon)
+        nameView.text = config.name
+    }
+
+    public override func scaleTo(_ isEnlarge: Bool) {
         super.scaleTo(isEnlarge)
 //        UIView.animate(withDuration: 0.3) {
 //            self.iconImage.snp.updateConstraints { make in

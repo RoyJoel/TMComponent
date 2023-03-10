@@ -61,6 +61,8 @@
 		A0F754C88A64972A40A9008B0AD52109 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D66012D2C62FDF0A0C8DDF659DD36 /* ConstraintDirectionalInsets.swift */; };
 		A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6509809195041E58D2D7A984E78AF4 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A53D3AF15CE8D348306EF11619C5D166 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C760A01ECAC976DEEA0BF16A440D1 /* ConstraintMakerEditable.swift */; };
+		A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200529BACCB300FD6400 /* TMButton.swift */; };
+		A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A38331331EDA1537B8644B0E9B773C34 /* UIImage+Compare.m */; };
 		B543FD108C1C6AF6129CB4991553218B /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58294F97409EA83594FCA42186AF2AF /* ConstraintConfig.swift */; };
 		B6F25863A016B08668E14E610DF6F512 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -137,7 +139,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011D73F2A3424C3810E6FAEFC1D96035 /* TMComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TMComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		011D73F2A3424C3810E6FAEFC1D96035 /* TMComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = TMComponent.podspec; path = ../../TMComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		03771ACFD02F4B138FAF23D49A60B8EE /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		07443AB34CC1B0AE1188FAA0813599AB /* Pods-TMComponent_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMComponent_Example-umbrella.h"; sourceTree = "<group>"; };
 		0A15111DBE3FF5BB06022F92763BEB2E /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
@@ -157,50 +159,50 @@
 		2432BEA89B4175D46498BF19DF823FA5 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		28D4CD794A4FDC9C47F4B8504528663F /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		293AD1AAFC0D4F1D4155B71D134266B7 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		2BDAFF8C0D87B0F5538A70803E67C59F /* TMTitleOrImageButtonConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMTitleOrImageButtonConfig.swift; path = TMComponent/Classes/TMTitleOrImageButtonConfig.swift; sourceTree = "<group>"; };
-		2EBE6BD69D56B5113EDC7460288911EF /* TMComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TMComponent.debug.xcconfig; sourceTree = "<group>"; };
+		2BDAFF8C0D87B0F5538A70803E67C59F /* TMTitleOrImageButtonConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMTitleOrImageButtonConfig.swift; sourceTree = "<group>"; };
+		2EBE6BD69D56B5113EDC7460288911EF /* TMComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = TMComponent.debug.xcconfig; path = TMComponent/TMComponent.debug.xcconfig; sourceTree = "<group>"; };
 		2F876EE5F0A073A687225BBB3ADA47FE /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		305C06D01515415DB321633AC5C47E2A /* Pods-TMComponent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TMComponent_Tests.modulemap"; sourceTree = "<group>"; };
 		30D65203715B254337220CD85DC1F9ED /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		32059EA2B1485BAE02163AE7F4D7001C /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		33FDFD53130A2399CDF123598D30841D /* Pods-TMComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMComponent_Tests-Info.plist"; sourceTree = "<group>"; };
-		365A293E828FDFB295AF9E1FB5907D18 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = TMComponent/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
-		3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMInfoView.swift; path = TMComponent/Classes/TMInfoView.swift; sourceTree = "<group>"; };
+		365A293E828FDFB295AF9E1FB5907D18 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMInfoView.swift; sourceTree = "<group>"; };
 		3F21542A6F2768B9B0233BB488C07678 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		41BCA10EE0C1AEAC72EE1ED20023B819 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		437CCE3385B661A0A48ACF4B07063D96 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		43D745F9DF756178300474D053A2A2D7 /* Pods-TMComponent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TMComponent_Example.modulemap"; sourceTree = "<group>"; };
-		45C893652FF5511A359FA2835102FC64 /* TMComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TMComponent-Info.plist"; sourceTree = "<group>"; };
+		45C893652FF5511A359FA2835102FC64 /* TMComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "TMComponent-Info.plist"; path = "TMComponent/TMComponent-Info.plist"; sourceTree = "<group>"; };
 		4674477C145D23117042F5DF1F9B3FB7 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		4B62D425E24FD6068A01DBF0FFA294CF /* TMmultiplyConfigurableViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMmultiplyConfigurableViewConfig.swift; path = TMComponent/Classes/TMmultiplyConfigurableViewConfig.swift; sourceTree = "<group>"; };
+		4B62D425E24FD6068A01DBF0FFA294CF /* TMmultiplyConfigurableViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMmultiplyConfigurableViewConfig.swift; sourceTree = "<group>"; };
 		4FF982B0AB8775FBDCD55E52E1FA5CCD /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		542F1ECA570ECEAFF0122E8DB97B38EC /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		558F51C6D0457891DB9CD6D9588FAAC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		558F51C6D0457891DB9CD6D9588FAAC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		594EC1E7A411E5C7151C6CC278D2E632 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		5B1FCD73CFA7D77CBEFBB03252142B53 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E70942188D5ED5B496C28B8DF7D19A0 /* TMViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMViewController.swift; path = TMComponent/Classes/TMViewController.swift; sourceTree = "<group>"; };
-		5FAF3F947A38B03DB09E2961E2340F04 /* TMBasicPointView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBasicPointView.swift; path = TMComponent/Classes/TMBasicPointView.swift; sourceTree = "<group>"; };
+		5E70942188D5ED5B496C28B8DF7D19A0 /* TMViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMViewController.swift; sourceTree = "<group>"; };
+		5FAF3F947A38B03DB09E2961E2340F04 /* TMBasicPointView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMBasicPointView.swift; sourceTree = "<group>"; };
 		61FA09BDA047BB90052AF68DDA5CAFDD /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		62139C08F714CD0A7001FA0DE216333F /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		634C072569C51DFD30166D0995B3051E /* TMComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TMComponent-prefix.pch"; sourceTree = "<group>"; };
+		634C072569C51DFD30166D0995B3051E /* TMComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TMComponent-prefix.pch"; path = "TMComponent/TMComponent-prefix.pch"; sourceTree = "<group>"; };
 		66978E479210BD97B4E7CD9523DFCB38 /* Pods-TMComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6F6509809195041E58D2D7A984E78AF4 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		7053C2C0D433FD4D7F3E6897583D836F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7053C2C0D433FD4D7F3E6897583D836F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		70AC41973F0C606930C110A8DE3FD738 /* Pods-TMComponent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMComponent_Tests-umbrella.h"; sourceTree = "<group>"; };
 		73907E4D7E279864A19F8EF256926572 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMView.swift; path = TMComponent/Classes/TMView.swift; sourceTree = "<group>"; };
-		7747FD9B86BBB0E78D164D9470A0CADF /* TMInfoViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMInfoViewConfig.swift; path = TMComponent/Classes/TMInfoViewConfig.swift; sourceTree = "<group>"; };
+		76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMView.swift; sourceTree = "<group>"; };
+		7747FD9B86BBB0E78D164D9470A0CADF /* TMInfoViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMInfoViewConfig.swift; sourceTree = "<group>"; };
 		7AF5110257C2E826DD002690B1757862 /* Pods-TMComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7AFF89B88FA1BAC1C87BF046E11094E0 /* TMmultiplyConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMmultiplyConfigurableView.swift; path = TMComponent/Classes/TMmultiplyConfigurableView.swift; sourceTree = "<group>"; };
+		7AFF89B88FA1BAC1C87BF046E11094E0 /* TMmultiplyConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMmultiplyConfigurableView.swift; sourceTree = "<group>"; };
 		7BCE432DF2A6956F07BCFC327669B36F /* Pods-TMComponent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMComponent_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7C0BFB04CDF33F53999BF69C233F6D4D /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 		7D58FB99DCFB4D9C46326ACD1991F6F3 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		7EF69DF27CBEF96A8AC91CBED20813E1 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		80C2DC703EBA3252B8FD19F0178CAE16 /* Pods-TMComponent_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TMComponent_Example"; path = Pods_TMComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		812F218E467F271A3ED50494353D3DD3 /* TMPointComparingViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMPointComparingViewConfig.swift; path = TMComponent/Classes/TMPointComparingViewConfig.swift; sourceTree = "<group>"; };
+		812F218E467F271A3ED50494353D3DD3 /* TMPointComparingViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMPointComparingViewConfig.swift; sourceTree = "<group>"; };
 		81D767BB24EECBF3CF2E954D1DDBA87A /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		81F3F4D2879CB30727827DAAA1D536B5 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		8330165014DE34158E48D801CB80DEBF /* Pods-TMComponent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMComponent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -208,8 +210,8 @@
 		866D9FE755DFCE449D56D638ACF5F7EE /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		89CBA9D6B4ADC4E86C7F3582BCF05A51 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		8F1819503C4D678E040BA108E3CC32FD /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		90D048C5AED11E678F024D939EF9F649 /* TMPointComparingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMPointComparingView.swift; path = TMComponent/Classes/TMPointComparingView.swift; sourceTree = "<group>"; };
-		91826DA844DAFA4D14AFA7FB441294DF /* TMComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TMComponent.release.xcconfig; sourceTree = "<group>"; };
+		90D048C5AED11E678F024D939EF9F649 /* TMPointComparingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMPointComparingView.swift; sourceTree = "<group>"; };
+		91826DA844DAFA4D14AFA7FB441294DF /* TMComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = TMComponent.release.xcconfig; path = TMComponent/TMComponent.release.xcconfig; sourceTree = "<group>"; };
 		91AD59244F1DFD57C8110C151EEEDEF3 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		93CDA9D4FF0D9BBFBD9E323A88F3F5E2 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		944983B2937872376A4F1AA9FFB89C25 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
@@ -218,24 +220,26 @@
 		9AB7638BD77F96DCE338494F29C00763 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		9B089590F4D105863658870EF7C0923A /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		9B5D66012D2C62FDF0A0C8DDF659DD36 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A118DEE1BAFB8AF2F40B80A87B5C5CD4 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		A38331331EDA1537B8644B0E9B773C34 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		A3ED6F9C6860C745E84CCFDBFFA9DEDD /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		A590C2C1F04C15F1B9C21A0DD3B515AA /* TMComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TMComponent.modulemap; sourceTree = "<group>"; };
+		A590C2C1F04C15F1B9C21A0DD3B515AA /* TMComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = TMComponent.modulemap; path = TMComponent/TMComponent.modulemap; sourceTree = "<group>"; };
+		A8B7200529BACCB300FD6400 /* TMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButton.swift; sourceTree = "<group>"; };
+		A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButtonConfig.swift; sourceTree = "<group>"; };
 		AE700936B5976B7DA41AB377EDC8F33D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		B839D137867189A76EBA75FDC14106E1 /* TMComponent */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TMComponent; path = TMComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB92B08B85994B159825124DF35E77BA /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		BCD4C13490F68ABCE11EF44325870DCF /* TMComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TMComponent-umbrella.h"; sourceTree = "<group>"; };
+		BCD4C13490F68ABCE11EF44325870DCF /* TMComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TMComponent-umbrella.h"; path = "TMComponent/TMComponent-umbrella.h"; sourceTree = "<group>"; };
 		BD445BA93B7926E0F6191E399DA0BB9A /* Pods-TMComponent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMComponent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BE36D60C3874362A7959E300E05B8046 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		BF966C6A73595CBC1858C49680D514A7 /* Pods-TMComponent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMComponent_Tests-dummy.m"; sourceTree = "<group>"; };
-		C054372A9EA531A2C3DC2B418E75CE81 /* TMBasicPointViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBasicPointViewConfig.swift; path = TMComponent/Classes/TMBasicPointViewConfig.swift; sourceTree = "<group>"; };
+		C054372A9EA531A2C3DC2B418E75CE81 /* TMBasicPointViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMBasicPointViewConfig.swift; sourceTree = "<group>"; };
 		CBCA0A2F9F752728720D4DF8C8C93981 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		CE5342EFD92EE77D664D900843E89ACC /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		D082296355E44615AD2B7F2238780F2D /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		D325239400A654F349AF46D660E10CD0 /* Pods-TMComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D560AD08716CC07B92BFEEF27C1D843C /* TMComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TMComponent-dummy.m"; sourceTree = "<group>"; };
+		D560AD08716CC07B92BFEEF27C1D843C /* TMComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TMComponent-dummy.m"; path = "TMComponent/TMComponent-dummy.m"; sourceTree = "<group>"; };
 		D58294F97409EA83594FCA42186AF2AF /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		D7F019BEA17DAF1519976CF3507F8C56 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		DADC3438999B3B013139E230AF6FDD6E /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
@@ -250,7 +254,7 @@
 		EF28E3F90F0BD32CED543346577AD7FA /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		F3CB6447F36823991AE7F8ED7793CB60 /* Pods-TMComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD9B5ABC744057C173E00A158C7B8BE0 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		FE3BD62EEBA1B65B58B28F5E5B186C59 /* TMTitleOrImageButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMTitleOrImageButton.swift; path = TMComponent/Classes/TMTitleOrImageButton.swift; sourceTree = "<group>"; };
+		FE3BD62EEBA1B65B58B28F5E5B186C59 /* TMTitleOrImageButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMTitleOrImageButton.swift; sourceTree = "<group>"; };
 		FE61A1CA7886D7153EA49404E62D422D /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		FECADDDF7B20AD98784465EDE0D8A6B8 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,7 +360,7 @@
 				91826DA844DAFA4D14AFA7FB441294DF /* TMComponent.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TMComponent";
+			path = "../../Example/Pods/Target Support Files";
 			sourceTree = "<group>";
 		};
 		3E8441A7811CACE4FA20DC7E04C651F9 /* Core */ = {
@@ -436,12 +440,14 @@
 				2BDAFF8C0D87B0F5538A70803E67C59F /* TMTitleOrImageButtonConfig.swift */,
 				76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */,
 				5E70942188D5ED5B496C28B8DF7D19A0 /* TMViewController.swift */,
+				A8B7200529BACCB300FD6400 /* TMButton.swift */,
+				A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */,
 				365A293E828FDFB295AF9E1FB5907D18 /* UIViewExtension.swift */,
 				1D813FB19DE29822538F996049CD0A3E /* Pod */,
 				3E556D4082FBF0BFB4042CEBB5C07CD7 /* Support Files */,
 			);
 			name = TMComponent;
-			path = ../..;
+			path = ../../TMComponent/Classes;
 			sourceTree = "<group>";
 		};
 		B6CA772DEE35CA2C061EBFB810B31810 /* Targets Support Files */ = {
@@ -508,7 +514,6 @@
 				35538BBC7D8BD5CFE207560EBB9EA02C /* Support Files */,
 				E41DEAFB41BD0A8F1D8706922C63FC9F /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -553,7 +558,6 @@
 				EF28E3F90F0BD32CED543346577AD7FA /* UILayoutSupport+Extensions.swift */,
 				7DA7A9213EC2AD263DDEF69BB9B0F5C0 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -837,6 +841,7 @@
 			files = (
 				569C46B91F3F9F5DF1BB7CA999F080A9 /* TMBasicPointView.swift in Sources */,
 				52DD1BD561E1F4BD600BBDAA8357B2AE /* TMBasicPointViewConfig.swift in Sources */,
+				A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */,
 				2741380B33464A0E0546A52B16098950 /* TMComponent-dummy.m in Sources */,
 				CD15E791104F758D7903A33F77045CB2 /* TMInfoView.swift in Sources */,
 				D0050F335756E79622B1E6C63D9A6AC3 /* TMInfoViewConfig.swift in Sources */,
@@ -849,6 +854,7 @@
 				65C0D401FA02C186C95182743434F4FE /* TMView.swift in Sources */,
 				1A510317EECD7451E3E84BDDD0C36462 /* TMViewController.swift in Sources */,
 				1C7B247AC56F791027C7082766236C5F /* UIViewExtension.swift in Sources */,
+				A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1311,8 +1317,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

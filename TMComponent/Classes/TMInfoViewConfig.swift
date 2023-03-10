@@ -8,10 +8,10 @@
 import Foundation
 
 open class TMInfoViewConfig {
-    public var iconName: String?
+    public var icon: String
     public var name: String
-    public init(iconName: String?, name: String) {
-        self.iconName = iconName
+    public init(icon: String, name: String) {
+        self.icon = icon
         self.name = name
     }
 }

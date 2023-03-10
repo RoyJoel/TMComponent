@@ -6,13 +6,13 @@
 //
 
 import Foundation
-class TMTitleOrImageButtonConfig {
-    var image: UIImage?
-    var title: String?
-    var action: Selector
-    var actionTarget: Any
+open class TMTitleOrImageButtonConfig {
+    public var image: UIImage?
+    public var title: String?
+    public var action: Selector
+    public var actionTarget: Any
 
-    init(image: UIImage? = nil, title: String? = nil, action: Selector, actionTarget: Any) {
+    public init(image: UIImage? = nil, title: String? = nil, action: Selector, actionTarget: Any) {
         self.image = image
         self.title = title
         self.action = action

@@ -46,7 +46,7 @@ open class TMmultiplyConfigurableView: TMView {
     }
 
     public func updateRightDate(at index: Int, isServingOnRight: Bool, newNum: String) {
-        vsViews[index].updateRightViewData(isServingOnRight: !isServingOnRight, newNum: newNum)
+        vsViews[index].updateRightViewData(isServingOnRight: isServingOnRight, newNum: newNum)
     }
 
     private func setupUI() {
@@ -105,7 +105,7 @@ open class TMmultiplyConfigurableView: TMView {
 //        }
     }
 
-    override public func scaleTo(_ isEnlarge: Bool) {
+    public override func scaleTo(_ isEnlarge: Bool) {
         super.scaleTo(isEnlarge)
         if !isEnlarge {
 //            setLabel.font = UIFont.systemFont(ofSize: 40, weight: .semibold)
