@@ -66,6 +66,8 @@
 		A86DE5C529CDD69800E8282A /* TMLabelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C029CDD69800E8282A /* TMLabelConfig.swift */; };
 		A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */; };
 		A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C229CDD69800E8282A /* TMPopUpView.swift */; };
+		A86DE5C929CDDCA600E8282A /* TMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C829CDDCA600E8282A /* TMInfoView.swift */; };
+		A86DE5CB29CDDCC600E8282A /* TMInfoViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */; };
 		A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200529BACCB300FD6400 /* TMButton.swift */; };
 		A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A38331331EDA1537B8644B0E9B773C34 /* UIImage+Compare.m */; };
@@ -235,6 +237,8 @@
 		A86DE5C029CDD69800E8282A /* TMLabelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMLabelConfig.swift; sourceTree = "<group>"; };
 		A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPopUpViewCell.swift; sourceTree = "<group>"; };
 		A86DE5C229CDD69800E8282A /* TMPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPopUpView.swift; sourceTree = "<group>"; };
+		A86DE5C829CDDCA600E8282A /* TMInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMInfoView.swift; sourceTree = "<group>"; };
+		A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMInfoViewConfig.swift; sourceTree = "<group>"; };
 		A8B7200529BACCB300FD6400 /* TMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButton.swift; sourceTree = "<group>"; };
 		A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButtonConfig.swift; sourceTree = "<group>"; };
 		AE700936B5976B7DA41AB377EDC8F33D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
@@ -441,6 +445,8 @@
 				5FAF3F947A38B03DB09E2961E2340F04 /* TMBasicPointView.swift */,
 				C054372A9EA531A2C3DC2B418E75CE81 /* TMBasicPointViewConfig.swift */,
 				3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMIconView.swift */,
+				A86DE5C829CDDCA600E8282A /* TMInfoView.swift */,
+				A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */,
 				7747FD9B86BBB0E78D164D9470A0CADF /* TMIconViewConfig.swift */,
 				7AFF89B88FA1BAC1C87BF046E11094E0 /* TMmultiplyConfigurableView.swift */,
 				4B62D425E24FD6068A01DBF0FFA294CF /* TMmultiplyConfigurableViewConfig.swift */,
@@ -859,6 +865,7 @@
 				52DD1BD561E1F4BD600BBDAA8357B2AE /* TMBasicPointViewConfig.swift in Sources */,
 				A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */,
 				A86DE5C429CDD69800E8282A /* TMLabel.swift in Sources */,
+				A86DE5C929CDDCA600E8282A /* TMInfoView.swift in Sources */,
 				A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */,
 				2741380B33464A0E0546A52B16098950 /* TMComponent-dummy.m in Sources */,
 				CD15E791104F758D7903A33F77045CB2 /* TMIconView.swift in Sources */,
@@ -872,6 +879,7 @@
 				C584B59A2F68CBF3C7ADAF1E24387749 /* TMTitleOrImageButtonConfig.swift in Sources */,
 				A86DE5C529CDD69800E8282A /* TMLabelConfig.swift in Sources */,
 				65C0D401FA02C186C95182743434F4FE /* TMView.swift in Sources */,
+				A86DE5CB29CDDCC600E8282A /* TMInfoViewConfig.swift in Sources */,
 				1A510317EECD7451E3E84BDDD0C36462 /* TMViewController.swift in Sources */,
 				1C7B247AC56F791027C7082766236C5F /* UIViewExtension.swift in Sources */,
 				A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */,
