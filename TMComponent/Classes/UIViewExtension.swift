@@ -31,6 +31,11 @@ extension UIView {
         addGestureRecognizer(tap)
     }
 
+    func removeTapGesture(_ target: Any, _ action: Selector?) {
+        let tap = UITapGestureRecognizer(target: target, action: action)
+        removeGestureRecognizer(tap)
+    }
+
     func addAnimation(_ fromValue: Any?, _ toValue: Any?, _ duration: CFTimeInterval, _ forKey: String?) {
         let animation = CABasicAnimation()
         animation.duration = duration
@@ -39,5 +44,20 @@ extension UIView {
         animation.fillMode = .forwards
 
         layer.add(animation, forKey: forKey)
+    }
+
+    func addAnimation(_ fromValue: Any?, _ toValue: Any?, _ duration: CFTimeInterval, _ forKey: String?, completionHandler: @escaping () -> Void) {
+        let animation = CABasicAnimation()
+        animation.duration = duration
+        animation.fromValue = fromValue
+        animation.toValue = toValue
+        animation.fillMode = .forwards
+
+        CATransaction.begin()
+        CATransaction.setCompletionBlock {
+            completionHandler()
+        }
+        layer.add(animation, forKey: forKey)
+        CATransaction.commit()
     }
 }

@@ -61,6 +61,11 @@
 		A0F754C88A64972A40A9008B0AD52109 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D66012D2C62FDF0A0C8DDF659DD36 /* ConstraintDirectionalInsets.swift */; };
 		A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6509809195041E58D2D7A984E78AF4 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A53D3AF15CE8D348306EF11619C5D166 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C760A01ECAC976DEEA0BF16A440D1 /* ConstraintMakerEditable.swift */; };
+		A86DE5C329CDD69800E8282A /* TMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5BE29CDD69800E8282A /* TMTableView.swift */; };
+		A86DE5C429CDD69800E8282A /* TMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5BF29CDD69800E8282A /* TMLabel.swift */; };
+		A86DE5C529CDD69800E8282A /* TMLabelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C029CDD69800E8282A /* TMLabelConfig.swift */; };
+		A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */; };
+		A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C229CDD69800E8282A /* TMPopUpView.swift */; };
 		A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200529BACCB300FD6400 /* TMButton.swift */; };
 		A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A38331331EDA1537B8644B0E9B773C34 /* UIImage+Compare.m */; };
@@ -225,6 +230,11 @@
 		A38331331EDA1537B8644B0E9B773C34 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		A3ED6F9C6860C745E84CCFDBFFA9DEDD /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		A590C2C1F04C15F1B9C21A0DD3B515AA /* TMComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = TMComponent.modulemap; path = TMComponent/TMComponent.modulemap; sourceTree = "<group>"; };
+		A86DE5BE29CDD69800E8282A /* TMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTableView.swift; sourceTree = "<group>"; };
+		A86DE5BF29CDD69800E8282A /* TMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMLabel.swift; sourceTree = "<group>"; };
+		A86DE5C029CDD69800E8282A /* TMLabelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMLabelConfig.swift; sourceTree = "<group>"; };
+		A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPopUpViewCell.swift; sourceTree = "<group>"; };
+		A86DE5C229CDD69800E8282A /* TMPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPopUpView.swift; sourceTree = "<group>"; };
 		A8B7200529BACCB300FD6400 /* TMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButton.swift; sourceTree = "<group>"; };
 		A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButtonConfig.swift; sourceTree = "<group>"; };
 		AE700936B5976B7DA41AB377EDC8F33D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
@@ -438,6 +448,11 @@
 				812F218E467F271A3ED50494353D3DD3 /* TMPointComparingViewConfig.swift */,
 				FE3BD62EEBA1B65B58B28F5E5B186C59 /* TMTitleOrImageButton.swift */,
 				2BDAFF8C0D87B0F5538A70803E67C59F /* TMTitleOrImageButtonConfig.swift */,
+				A86DE5BF29CDD69800E8282A /* TMLabel.swift */,
+				A86DE5C029CDD69800E8282A /* TMLabelConfig.swift */,
+				A86DE5C229CDD69800E8282A /* TMPopUpView.swift */,
+				A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */,
+				A86DE5BE29CDD69800E8282A /* TMTableView.swift */,
 				76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */,
 				5E70942188D5ED5B496C28B8DF7D19A0 /* TMViewController.swift */,
 				A8B7200529BACCB300FD6400 /* TMButton.swift */,
@@ -840,17 +855,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				569C46B91F3F9F5DF1BB7CA999F080A9 /* TMBasicPointView.swift in Sources */,
+				A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */,
 				52DD1BD561E1F4BD600BBDAA8357B2AE /* TMBasicPointViewConfig.swift in Sources */,
 				A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */,
+				A86DE5C429CDD69800E8282A /* TMLabel.swift in Sources */,
+				A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */,
 				2741380B33464A0E0546A52B16098950 /* TMComponent-dummy.m in Sources */,
 				CD15E791104F758D7903A33F77045CB2 /* TMInfoView.swift in Sources */,
 				D0050F335756E79622B1E6C63D9A6AC3 /* TMInfoViewConfig.swift in Sources */,
 				05C5050C11FD6394E663D07C509E7E00 /* TMmultiplyConfigurableView.swift in Sources */,
 				337C77ADE09DA8F2D0C91FCC8CD498C9 /* TMmultiplyConfigurableViewConfig.swift in Sources */,
+				A86DE5C329CDD69800E8282A /* TMTableView.swift in Sources */,
 				92BA1BCC27EF749831C7B7568F44562B /* TMPointComparingView.swift in Sources */,
 				47AB40DEB1B9D5C7E790FFEDF5C74E95 /* TMPointComparingViewConfig.swift in Sources */,
 				F5626D4897D428C0513951F8CA151EAD /* TMTitleOrImageButton.swift in Sources */,
 				C584B59A2F68CBF3C7ADAF1E24387749 /* TMTitleOrImageButtonConfig.swift in Sources */,
+				A86DE5C529CDD69800E8282A /* TMLabelConfig.swift in Sources */,
 				65C0D401FA02C186C95182743434F4FE /* TMView.swift in Sources */,
 				1A510317EECD7451E3E84BDDD0C36462 /* TMViewController.swift in Sources */,
 				1C7B247AC56F791027C7082766236C5F /* UIViewExtension.swift in Sources */,
