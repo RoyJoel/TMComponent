@@ -32,7 +32,7 @@ open class TMIconView: TMView {
         setupEvent(config: config)
     }
 
-    private func setupUI() {
+    public func setupUI() {
         clipsToBounds = false
         addSubview(iconImage)
         addSubview(nameView)
@@ -54,7 +54,7 @@ open class TMIconView: TMView {
         }
     }
 
-    private func setupEvent(config: TMIconViewConfig) {
+   public func setupEvent(config: TMIconViewConfig) {
         iconImage.image = UIImage(named: config.icon)
         iconImage.contentMode = .scaleAspectFill
         if config.name == "" {
