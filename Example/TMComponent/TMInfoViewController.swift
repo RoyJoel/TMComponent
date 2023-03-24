@@ -10,15 +10,15 @@ import UIKit
 import TMComponent
 
 open class TMInfoViewController: UIViewController {
-    lazy var oView: TMInfoView = {
-        let view = TMInfoView()
+    lazy var oView: TMIconView = {
+        let view = TMIconView()
         return view
     }()
     open override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        let config = TMInfoViewConfig(icon: "JasonZhang", name: "张嘉诚")
+        let config = TMIconViewConfig(icon: "JasonZhang", name: "张嘉诚")
         oView.setup(with: config)
         view.addSubview(oView)
         oView.snp.makeConstraints { make in

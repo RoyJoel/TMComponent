@@ -54,7 +54,7 @@ open class TMIconView: TMView {
         }
     }
 
-    private func setupEvent(config: TMInfoViewConfig) {
+    private func setupEvent(config: TMIconViewConfig) {
         iconImage.image = UIImage(named: config.icon)
         iconImage.contentMode = .scaleAspectFill
         if config.name == "" {
