@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class TMInfoViewConfig {
+open class TMIconViewConfig {
     public var icon: String
     public var name: String
     public init(icon: String, name: String) {

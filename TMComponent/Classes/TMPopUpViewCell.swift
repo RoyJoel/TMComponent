@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-class TMPopUpViewCell: UITableViewCell {
-    lazy var label: UILabel = {
+open class TMPopUpViewCell: UITableViewCell {
+    private lazy var label: UILabel = {
         let label = UILabel()
         return label
     }()
 
-    func setupUI() {
+    public func setupUI() {
         addSubview(label)
         label.backgroundColor = UIColor(named: "ComponentBackground")
         label.snp.makeConstraints { make in
@@ -24,7 +24,7 @@ class TMPopUpViewCell: UITableViewCell {
         label.textAlignment = .center
     }
 
-    func setupEvent(title: String) {
+    public func setupEvent(title: String) {
         label.text = title
     }
 }

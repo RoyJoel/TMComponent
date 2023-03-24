@@ -8,20 +8,20 @@
 import Foundation
 import UIKit
 
-class TMPopUpView: TMTableView {
-    override func setupUI() {
+open class TMPopUpView: TMTableView {
+    public override func setupUI() {
         delegate = self
         setCorner(radii: 8)
         super.setupUI()
     }
 
-    override func setupEvent(config: TMTableViewConfig) {
+    public override func setupEvent(config: TMTableViewConfig) {
         self.config = config
         setupSize()
         super.setupEvent(config: config)
     }
 
-    func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         if toggle == false {
             unfold()
         } else {
@@ -35,7 +35,7 @@ class TMPopUpView: TMTableView {
         }
     }
 
-    func setupSize() {
+    public func setupSize() {
         var scaledNum: CGFloat = 0
         var scaledHeight: CGFloat = 0
         if config.cells.count >= 4 {
@@ -49,8 +49,8 @@ class TMPopUpView: TMTableView {
     }
 }
 
-class TMPopUpViewConfig: TMTableViewConfig {
-    override init(cells: [UITableViewCell], rowHeight: CGFloat, rowNumWhenFold: Int = 1, rowNumWhenUnfold: Int = 4) {
+open class TMPopUpViewConfig: TMTableViewConfig {
+    public override init(cells: [UITableViewCell], rowHeight: CGFloat, rowNumWhenFold: Int = 1, rowNumWhenUnfold: Int = 4) {
         super.init(cells: cells, rowHeight: rowHeight, rowNumWhenFold: rowNumWhenFold, rowNumWhenUnfold: rowNumWhenUnfold)
         self.cells = cells
         self.rowHeight = rowHeight

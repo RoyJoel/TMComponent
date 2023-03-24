@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+open class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
     var config: TMTableViewConfig = TMTableViewConfig(cells: [], rowHeight: 0, rowNumWhenFold: 0, rowNumWhenUnfold: 0)
     public var originalBounds: CGRect = .init()
 
@@ -32,7 +32,7 @@ class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         self.duration = duration
     }
 
-    func setupUI() {
+    public func setupUI() {
         dataSource = self
         separatorStyle = .none
         showsVerticalScrollIndicator = false
@@ -45,7 +45,7 @@ class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         register(TMPopUpViewCell.self, forCellReuseIdentifier: "TMPopUpViewCell")
     }
 
-    func setupEvent(config: TMTableViewConfig) {
+    public func setupEvent(config: TMTableViewConfig) {
         self.config = config
         reloadData()
     }
@@ -68,7 +68,7 @@ class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         layer.position = originalPoint
     }
 
-    func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
+    public func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         if toggle == false {
             return config.rowNumWhenFold
         } else {
@@ -76,23 +76,23 @@ class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         }
     }
 
-    func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
+    public func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
         return config.rowHeight
     }
 
-    func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = config.cells[indexPath.row]
         cell.selectionStyle = .none
         return cell
     }
 }
 
-class TMTableViewConfig {
-    var cells: [UITableViewCell]
-    var rowHeight: CGFloat
-    var rowNumWhenFold: Int
-    var rowNumWhenUnfold: Int
-    init(cells: [UITableViewCell], rowHeight: CGFloat, rowNumWhenFold: Int, rowNumWhenUnfold: Int) {
+open class TMTableViewConfig {
+    public var cells: [UITableViewCell]
+    public var rowHeight: CGFloat
+    public var rowNumWhenFold: Int
+    public var rowNumWhenUnfold: Int
+    public init(cells: [UITableViewCell], rowHeight: CGFloat, rowNumWhenFold: Int, rowNumWhenUnfold: Int) {
         self.cells = cells
         self.rowHeight = rowHeight
         self.rowNumWhenFold = rowNumWhenFold

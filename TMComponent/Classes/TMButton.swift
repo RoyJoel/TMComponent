@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import TMComponent
 import UIKit
 
 open class TMButton: UIButton {
@@ -17,7 +16,7 @@ open class TMButton: UIButton {
         setupEvent(config: config)
     }
 
-    private func setupUI() {
+    public func setupUI() {
         setTitleColor(.black, for: .normal)
         setTitleColor(UIColor(named: "TennisBlur"), for: .selected)
         backgroundColor = .white
@@ -27,7 +26,7 @@ open class TMButton: UIButton {
         drawBorder(color: .black, width: 2)
     }
 
-    private func setupEvent(config: TMButtonConfig) {
+    public func setupEvent(config: TMButtonConfig) {
         self.config = config
         setTitle(config.title, for: .normal)
         addTapGesture(config.actionTarget, config.action)

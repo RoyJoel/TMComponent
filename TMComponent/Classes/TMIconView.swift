@@ -10,8 +10,8 @@ import SnapKit
 import UIKit
 
 /// 基本信息视图，使用时需设置宽高，图片大小将随之变化
-open class TMInfoView: TMView {
-    public var config = TMInfoViewConfig(icon: "", name: "")
+open class TMIconView: TMView {
+    public var config = TMIconViewConfig(icon: "", name: "")
 
     private lazy var iconImage: UIImageView = {
         var image = UIImageView()
@@ -25,7 +25,7 @@ open class TMInfoView: TMView {
         return view
     }()
 
-    public func setup(with config: TMInfoViewConfig) {
+    public func setup(with config: TMIconViewConfig) {
         self.config = config
 
         setupUI()

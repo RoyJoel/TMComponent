@@ -82,8 +82,8 @@
 		CB194156C900B767B0160AF72EDF354D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21842211D951E6EC0201FD139E0790FF /* ConstraintMaker.swift */; };
 		CB8E4BF0D710970BE2CB4C87ED1043E4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA0A2F9F752728720D4DF8C8C93981 /* ConstraintMakerRelatable.swift */; };
 		CCA22C9F421C9E8C13009947816D8C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		CD15E791104F758D7903A33F77045CB2 /* TMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMInfoView.swift */; };
-		D0050F335756E79622B1E6C63D9A6AC3 /* TMInfoViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747FD9B86BBB0E78D164D9470A0CADF /* TMInfoViewConfig.swift */; };
+		CD15E791104F758D7903A33F77045CB2 /* TMIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMIconView.swift */; };
+		D0050F335756E79622B1E6C63D9A6AC3 /* TMIconViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7747FD9B86BBB0E78D164D9470A0CADF /* TMIconViewConfig.swift */; };
 		D13D417B236E736EEAE7217B5CE3EC5C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EC1E7A411E5C7151C6CC278D2E632 /* ConstraintMakerFinalizable.swift */; };
 		D59C2826AD288ECFF576B2AFA312716C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F92B62A14B28B323404C324B449E7F /* ConstraintRelation.swift */; };
 		E36244E8BF4AC941E82DAF16DDF4BBC2 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE700936B5976B7DA41AB377EDC8F33D /* ConstraintPriorityTarget.swift */; };
@@ -173,7 +173,7 @@
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		33FDFD53130A2399CDF123598D30841D /* Pods-TMComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TMComponent_Tests-Info.plist"; sourceTree = "<group>"; };
 		365A293E828FDFB295AF9E1FB5907D18 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMInfoView.swift; sourceTree = "<group>"; };
+		3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMIconView.swift; sourceTree = "<group>"; };
 		3F21542A6F2768B9B0233BB488C07678 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		41BCA10EE0C1AEAC72EE1ED20023B819 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		437CCE3385B661A0A48ACF4B07063D96 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 		70AC41973F0C606930C110A8DE3FD738 /* Pods-TMComponent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMComponent_Tests-umbrella.h"; sourceTree = "<group>"; };
 		73907E4D7E279864A19F8EF256926572 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMView.swift; sourceTree = "<group>"; };
-		7747FD9B86BBB0E78D164D9470A0CADF /* TMInfoViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMInfoViewConfig.swift; sourceTree = "<group>"; };
+		7747FD9B86BBB0E78D164D9470A0CADF /* TMIconViewConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMIconViewConfig.swift; sourceTree = "<group>"; };
 		7AF5110257C2E826DD002690B1757862 /* Pods-TMComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7AFF89B88FA1BAC1C87BF046E11094E0 /* TMmultiplyConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TMmultiplyConfigurableView.swift; sourceTree = "<group>"; };
 		7BCE432DF2A6956F07BCFC327669B36F /* Pods-TMComponent_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TMComponent_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -440,8 +440,8 @@
 			children = (
 				5FAF3F947A38B03DB09E2961E2340F04 /* TMBasicPointView.swift */,
 				C054372A9EA531A2C3DC2B418E75CE81 /* TMBasicPointViewConfig.swift */,
-				3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMInfoView.swift */,
-				7747FD9B86BBB0E78D164D9470A0CADF /* TMInfoViewConfig.swift */,
+				3C3F3DBE56872CFAAD28FE16C57D11B8 /* TMIconView.swift */,
+				7747FD9B86BBB0E78D164D9470A0CADF /* TMIconViewConfig.swift */,
 				7AFF89B88FA1BAC1C87BF046E11094E0 /* TMmultiplyConfigurableView.swift */,
 				4B62D425E24FD6068A01DBF0FFA294CF /* TMmultiplyConfigurableViewConfig.swift */,
 				90D048C5AED11E678F024D939EF9F649 /* TMPointComparingView.swift */,
@@ -861,8 +861,8 @@
 				A86DE5C429CDD69800E8282A /* TMLabel.swift in Sources */,
 				A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */,
 				2741380B33464A0E0546A52B16098950 /* TMComponent-dummy.m in Sources */,
-				CD15E791104F758D7903A33F77045CB2 /* TMInfoView.swift in Sources */,
-				D0050F335756E79622B1E6C63D9A6AC3 /* TMInfoViewConfig.swift in Sources */,
+				CD15E791104F758D7903A33F77045CB2 /* TMIconView.swift in Sources */,
+				D0050F335756E79622B1E6C63D9A6AC3 /* TMIconViewConfig.swift in Sources */,
 				05C5050C11FD6394E663D07C509E7E00 /* TMmultiplyConfigurableView.swift in Sources */,
 				337C77ADE09DA8F2D0C91FCC8CD498C9 /* TMmultiplyConfigurableViewConfig.swift in Sources */,
 				A86DE5C329CDD69800E8282A /* TMTableView.swift in Sources */,
