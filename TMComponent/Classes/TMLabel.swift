@@ -67,7 +67,7 @@ open class TMLabel: UILabel {
         }
     }
 
-    func setupEvent(config: TMLabelConfig) {
+    public func setupEvent(config: TMLabelConfig) {
         text = config.title
         font = UIFont.systemFont(ofSize: config.font)
     }

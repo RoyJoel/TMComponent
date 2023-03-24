@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TMLabelConfig {
+open class TMLabelConfig {
     public var title: String
     public var font: CGFloat
     init(title: String, font: CGFloat) {
