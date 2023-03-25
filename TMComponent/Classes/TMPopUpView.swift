@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 open class TMPopUpView: TMTableView {
+    public var selectedCell: UITableViewCell?
+    
     public override func setupUI() {
         delegate = self
         setCorner(radii: 8)
@@ -29,6 +31,7 @@ open class TMPopUpView: TMTableView {
                 moveRow(at: indexPath, to: IndexPath(row: 0, section: 0))
             }
             let cell = config.cells[indexPath.row]
+            selectedCell = cell
             config.cells.remove(at: indexPath.row)
             config.cells.insert(cell, at: 0)
             fold()
