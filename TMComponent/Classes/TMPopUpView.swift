@@ -44,4 +44,8 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
         }
         setup(bounds, layer.position, CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height * scaledNum), CGPoint(x: layer.position.x, y: scaledHeight), 0.3)
     }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        originalBounds.height
+    }
 }
