@@ -27,6 +27,7 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
             UIView.performWithoutAnimation {
                 moveRow(at: indexPath, to: IndexPath(row: 0, section: 0))
             }
+            deselectRow(at: indexPath, animated: false)
             selectedIndex = indexPath
             fold()
         }
