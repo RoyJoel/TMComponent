@@ -11,6 +11,7 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		86A4F435E723DFFFE0C05272 /* Pods_TMComponent_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A5EC6F31004DCD6277F11C /* Pods_TMComponent_Example.framework */; };
+		A86DE5D129CFDF9300E8282A /* TMPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5D029CFDF9300E8282A /* TMPopUpViewController.swift */; };
 		A8ABA10829B04300002F1632 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ABA0FA29B04300002F1632 /* MainTableViewController.swift */; };
 		A8ABA10929B04300002F1632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ABA0FB29B04300002F1632 /* ViewController.swift */; };
 		A8ABA10A29B04300002F1632 /* TMLeftBasicPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ABA0FC29B04300002F1632 /* TMLeftBasicPointViewController.swift */; };
@@ -49,6 +50,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		719CCA438DA4DCFE816B3165 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7F9CC43E613EB40BC380CB28 /* Pods-TMComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-TMComponent_Tests/Pods-TMComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A86DE5D029CFDF9300E8282A /* TMPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPopUpViewController.swift; sourceTree = "<group>"; };
 		A8ABA0FA29B04300002F1632 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A8ABA0FB29B04300002F1632 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8ABA0FC29B04300002F1632 /* TMLeftBasicPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMLeftBasicPointViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A8ABA0FE29B04300002F1632 /* TMTableViewCell.swift */,
 				A8ABA10429B04300002F1632 /* TMTitleViewAboveVSViewController.swift */,
 				A8ABA10029B04300002F1632 /* TMTitleViewWithVSViewController.swift */,
+				A86DE5D029CFDF9300E8282A /* TMPopUpViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				A8ABA10229B04300002F1632 /* AppDelegate.swift */,
 				A8ABA10529B04300002F1632 /* ExampleViews.swift */,
@@ -393,6 +396,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A8ABA11029B04300002F1632 /* AppDelegate.swift in Sources */,
 				A8ABA10B29B04300002F1632 /* TMPointRecordViewController.swift in Sources */,
+				A86DE5D129CFDF9300E8282A /* TMPopUpViewController.swift in Sources */,
 				A8ABA11329B04300002F1632 /* ExampleViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

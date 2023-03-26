@@ -8,8 +8,14 @@
 import Foundation
 import UIKit
 
+public protocol TMTableViewDataSource: NSObjectProtocol {
+    func tableView(cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(heightForRowAt indexPath: IndexPath) -> CGFloat
+    func tableView(numberOfRowsInSection section: Int) -> Int
+}
+
 open class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
-    var config: TMTableViewConfig = TMTableViewConfig(cells: [], rowHeight: 0, rowNumWhenFold: 0, rowNumWhenUnfold: 0)
+    
     public var originalBounds: CGRect = .init()
 
     public var originalPoint: CGPoint = .init()
@@ -23,6 +29,8 @@ open class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate 
     public var duration: CFTimeInterval = 0
 
     public var toggle: Bool = false
+    
+    weak public var TMDataSource: TMTableViewDataSource?
 
     public func setup(_ originalBounds: CGRect, _ originalPoint: CGPoint, _ newBounds: CGRect, _ newPoint: CGPoint, _ duration: CFTimeInterval) {
         self.originalBounds = originalBounds
@@ -42,12 +50,7 @@ open class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate 
             sectionHeaderTopPadding = 0
             UITableView.appearance().isPrefetchingEnabled = false
         }
-        register(TMPopUpViewCell.self, forCellReuseIdentifier: "TMPopUpViewCell")
-    }
-
-    public func setupEvent(config: TMTableViewConfig) {
-        self.config = config
-        reloadData()
+        register(TMPopUpCell.self, forCellReuseIdentifier: "TMPopUpCell")
     }
 
     open func unfold() {
@@ -68,34 +71,16 @@ open class TMTableView: UITableView, UITableViewDataSource, UITableViewDelegate 
         layer.position = originalPoint
     }
 
-    public func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        if toggle == false {
-            return config.rowNumWhenFold
-        } else {
-            return config.cells.count
-        }
+    public func tableView(_: UITableView, numberOfRowsInSection section: Int) -> Int {
+        TMDataSource?.tableView(numberOfRowsInSection: section) ?? 0
     }
 
-    public func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
-        return config.rowHeight
+    public func tableView(_: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        TMDataSource?.tableView(heightForRowAt: indexPath) ?? 0
     }
 
     public func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = config.cells[indexPath.row]
-        cell.selectionStyle = .none
-        return cell
+        TMDataSource?.tableView(cellForRowAt: indexPath) ?? UITableViewCell()
     }
 }
 
-open class TMTableViewConfig {
-    public var cells: [UITableViewCell]
-    public var rowHeight: CGFloat
-    public var rowNumWhenFold: Int
-    public var rowNumWhenUnfold: Int
-    public init(cells: [UITableViewCell], rowHeight: CGFloat, rowNumWhenFold: Int, rowNumWhenUnfold: Int) {
-        self.cells = cells
-        self.rowHeight = rowHeight
-        self.rowNumWhenFold = rowNumWhenFold
-        self.rowNumWhenUnfold = rowNumWhenUnfold
-    }
-}

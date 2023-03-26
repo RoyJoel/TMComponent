@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-open class TMPopUpViewCell: UITableViewCell {
-    private lazy var label: UILabel = {
+open class TMPopUpCell: UITableViewCell {
+    
+    lazy var label: UILabel = {
         let label = UILabel()
         return label
     }()
@@ -23,8 +24,8 @@ open class TMPopUpViewCell: UITableViewCell {
 
         label.textAlignment = .center
     }
-
     public func setupEvent(title: String) {
         label.text = title
     }
 }
+
