@@ -10,7 +10,7 @@ import UIKit
 
 
 
-open class TMPopUpView: TMTableView {
+open class TMPopUpView: TMTableView, UITableViewDelegate {
     
     public var selectedIndex: IndexPath?
     
