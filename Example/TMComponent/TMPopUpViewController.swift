@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 import TMComponent
 
-class TMPopUpViewController: UIViewController, TMTableViewDataSource {
+class TMPopUpViewController: UIViewController, UITableViewDataSource {
+    
     lazy var oView: TMPopUpView = {
         let view = TMPopUpView()
         return view
@@ -19,32 +20,26 @@ class TMPopUpViewController: UIViewController, TMTableViewDataSource {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        oView.TMDataSource = self
+        oView.dataSource = self
         
         view.addSubview(oView)
         
-//        oView.snp.makeConstraints { make in
-//            make.top.equalToSuperview().offset(100)
-//            make.centerX.equalToSuperview()
-//            make.width.equalTo(300)
-//            make.height.equalTo(30)
-//        }
         oView.frame = CGRect(x: 12, y: 12, width: 300, height: 30)
         oView.setupUI()
     }
-    func tableView(cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TMPopUpCustomCell()
         cell.setupUI()
         cell.setupEvent(title: "fasdfasfasdf")
         return cell
     }
-    func tableView(heightForRowAt indexPath: IndexPath) -> CGFloat {
-        30
-    }
     
-    func tableView(numberOfRowsInSection section: Int) -> Int {
-        10
-    }
+    
 }
 
 class TMPopUpCustomCell: UITableViewCell{
