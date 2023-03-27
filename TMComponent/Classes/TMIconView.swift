@@ -38,6 +38,7 @@ open class TMIconView: TMView {
         addSubview(nameView)
 
         nameView.isHidden = false
+        iconImage.contentMode = .scaleAspectFill
 
         iconImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -56,7 +57,6 @@ open class TMIconView: TMView {
 
    public func setupEvent(config: TMIconViewConfig) {
         iconImage.image = UIImage(named: config.icon)
-        iconImage.contentMode = .scaleAspectFill
         if config.name == "" {
             nameView.isHidden = true
         } else {
@@ -69,7 +69,12 @@ open class TMIconView: TMView {
         config.icon = icon
         config.name = name
         iconImage.image = UIImage(named: config.icon)
-        nameView.text = config.name
+        if config.name == "" {
+            nameView.isHidden = true
+        } else {
+            nameView.isHidden = false
+            nameView.text = config.name
+        }
     }
 
     public override func scaleTo(_ isEnlarge: Bool) {
