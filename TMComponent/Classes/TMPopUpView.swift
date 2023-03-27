@@ -14,22 +14,26 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
     
     public var selectedIndex: IndexPath?
     
+    public var selectedCompletionHandler: (() -> Void)?
+    
     public override func setupUI() {
         setCorner(radii: 8)
         super.setupUI()
         setupSize()
     }
 
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if toggle == false {
             unfold()
+            reloadData()
         } else {
             UIView.performWithoutAnimation {
                 moveRow(at: indexPath, to: IndexPath(row: 0, section: 0))
             }
-            deselectRow(at: indexPath, animated: false)
+            deselectRow(at: IndexPath(row: 0, section: 0), animated: false)
             selectedIndex = indexPath
             fold()
+            (selectedCompletionHandler ?? {})()
         }
     }
 
