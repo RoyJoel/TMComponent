@@ -27,13 +27,14 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
             unfold()
             reloadData()
         } else {
+            selectedIndex = indexPath
+            setContentOffset(CGPoint(x: 0, y: 0), animated: false)
             UIView.performWithoutAnimation {
                 moveRow(at: indexPath, to: IndexPath(row: 0, section: 0))
             }
             deselectRow(at: IndexPath(row: 0, section: 0), animated: false)
-            selectedIndex = indexPath
-            fold()
             (selectedCompletionHandler ?? {})()
+            fold()
         }
     }
 
