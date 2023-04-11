@@ -11,13 +11,11 @@ import UIKit
 open class TMmultiplyConfigurableViewConfig {
     public var rowHeight: CGFloat
     public var rowSpacing: CGFloat
-    public var numberOfRow: Int
     public var configs: [TMPointComparingViewConfig]
 
-    public init(rowHeight: CGFloat, rowSpacing: CGFloat, numberOfRow: Int, configs: [TMPointComparingViewConfig]) {
+    public init(rowHeight: CGFloat, rowSpacing: CGFloat, configs: [TMPointComparingViewConfig]) {
         self.rowHeight = rowHeight
         self.rowSpacing = rowSpacing
-        self.numberOfRow = numberOfRow
         self.configs = configs
     }
 
