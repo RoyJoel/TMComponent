@@ -17,7 +17,7 @@ open class TMPopUpCell: UITableViewCell {
 
     public func setupUI() {
         addSubview(label)
-        label.backgroundColor = UIColor(named: "ComponentBackground")
+        label.backgroundColor = UIColor(named: "BackgroundGray")
         label.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

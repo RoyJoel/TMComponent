@@ -245,10 +245,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N4NMV97NG4;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N4NMV97NG4;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -524,6 +526,7 @@
 			baseConfigurationReference = FA843170B5F976F59EFC07DB /* Pods-TMComponent_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N4NMV97NG4;
 				INFOPLIST_FILE = TMComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -540,6 +543,7 @@
 			baseConfigurationReference = 42DBB513EF55D5E16BD6F3EC /* Pods-TMComponent_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N4NMV97NG4;
 				INFOPLIST_FILE = TMComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -555,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4645781AA5B8309A8839F28 /* Pods-TMComponent_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N4NMV97NG4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F9CC43E613EB40BC380CB28 /* Pods-TMComponent_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N4NMV97NG4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

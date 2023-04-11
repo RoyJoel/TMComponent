@@ -28,10 +28,12 @@ open class TMTitleOrImageButton: UIButton {
     }
 
     private func setupUI() {
-        setTitleColor(.black, for: .normal)
-        backgroundColor = .white
+        setTitleColor(UIColor(named: "ContentBackground"), for: .normal)
+        setTitleColor(UIColor(named: "TennisBlur"), for: .selected)
+        backgroundColor = UIColor(named: "ComponentBackground")
+        titleLabel?.numberOfLines = 2
+        titleLabel?.textAlignment = .center
         setCorner(radii: 15)
-        drawBorder(color: .black, width: 2)
 
         addSubview(optionalImageView)
         addSubview(optionalTitleLabel)

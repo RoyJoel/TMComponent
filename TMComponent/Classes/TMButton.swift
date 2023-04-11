@@ -17,13 +17,12 @@ open class TMButton: UIButton {
     }
 
     public func setupUI() {
-        setTitleColor(.black, for: .normal)
+        setTitleColor(UIColor(named: "ContentBackground"), for: .normal)
         setTitleColor(UIColor(named: "TennisBlur"), for: .selected)
-        backgroundColor = .white
+        backgroundColor = UIColor(named: "ComponentBackground")
         titleLabel?.numberOfLines = 2
         titleLabel?.textAlignment = .center
         setCorner(radii: 15)
-        drawBorder(color: .black, width: 2)
     }
 
     public func setupEvent(config: TMButtonConfig) {

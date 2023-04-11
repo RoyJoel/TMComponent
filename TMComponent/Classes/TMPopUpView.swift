@@ -54,4 +54,11 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         originalBounds.height
     }
+    
+    open override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        if !self.point(inside: point, with: nil), toggle == true {
+            fold()
+        }
+        return super.hitTest(point, with: event)
+    }
 }
