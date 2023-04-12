@@ -12,7 +12,7 @@ open class TMPointComparingViewConfig {
     public var isTitleViewAbovePointView: Bool
     public var isTitleHidden: Bool
     public var title: String?
-    public var iconName: String
+    public var iconName: String?
     public var isServingOnLeft: Bool
     public var areBothServing: Bool
     public var isComparing: Bool
@@ -20,7 +20,7 @@ open class TMPointComparingViewConfig {
     public var leftNum: String
     public var rightNum: String
 
-    public init(isTitleViewAbovePointView: Bool, isTitleHidden: Bool, title: String? = nil, iconName: String, isServingOnLeft: Bool, areBothServing: Bool, isComparing: Bool, font: UIFont, leftNum: String, rightNum: String) {
+    public init(isTitleViewAbovePointView: Bool, isTitleHidden: Bool, title: String? = nil, iconName: String? = nil, isServingOnLeft: Bool, areBothServing: Bool, isComparing: Bool, font: UIFont, leftNum: String, rightNum: String) {
         self.isTitleViewAbovePointView = isTitleViewAbovePointView
         self.isTitleHidden = isTitleHidden
         self.title = title

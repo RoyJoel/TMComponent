@@ -10,12 +10,12 @@ import UIKit
 
 open class TMBasicPointViewConfig {
     public var isLeft: Bool
-    public var iconName: String
+    public var iconName: String?
     public var isServing: Bool
     public var num: String
     public var font: UIFont
 
-    public init(isLeft: Bool, iconName: String, isServing: Bool, num: String, font: UIFont) {
+    public init(isLeft: Bool, iconName: String? = nil, isServing: Bool, num: String, font: UIFont) {
         self.isLeft = isLeft
         self.iconName = iconName
         self.isServing = isServing

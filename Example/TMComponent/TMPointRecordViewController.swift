@@ -24,7 +24,7 @@ class TMPointRecordViewController: UIViewController {
         let config4 = TMPointComparingViewConfig(isTitleViewAbovePointView: false, isTitleHidden: false, title: "标题在中，右侧发球", iconName: "Jason Zhang", isServingOnLeft: false, areBothServing: false, isComparing: true, font: UIFont.systemFont(ofSize: 20), leftNum: "100", rightNum: "100")
         let configs = [config1, config2, config3, config4]
         
-        let config = TMmultiplyConfigurableViewConfig(rowHeight: 50, rowSpacing: 10, numberOfRow: 4, configs: configs)
+        let config = TMmultiplyConfigurableViewConfig(rowHeight: 50, rowSpacing: 10, configs: configs)
         
         oView.setup(with: config)
         
