@@ -8,9 +8,9 @@
 import Foundation
 
 open class TMIconViewConfig {
-    public var icon: String
+    public var icon: Data
     public var name: String
-    public init(icon: String, name: String) {
+    public init(icon: Data, name: String) {
         self.icon = icon
         self.name = name
     }

@@ -19,7 +19,7 @@ open class TMImageView: UIImageView {
     }
 
     public func setupEvent(config: TMImageViewConfig) {
-        image = UIImage(named: config.image)
+        image = UIImage(data: config.image)
         contentMode = config.contentMode
     }
 }

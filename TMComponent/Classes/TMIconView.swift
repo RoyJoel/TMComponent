@@ -11,7 +11,7 @@ import UIKit
 
 /// 基本信息视图，使用时需设置宽高，图片大小将随之变化
 open class TMIconView: TMView {
-    public var config = TMIconViewConfig(icon: "", name: "")
+    public var config = TMIconViewConfig(icon: Data(), name: "")
 
     private lazy var iconImage: UIImageView = {
         var image = UIImageView()
@@ -53,10 +53,12 @@ open class TMIconView: TMView {
             make.height.equalTo(30)
             make.centerX.equalTo(self.iconImage.snp.centerX)
         }
+        iconImage.isUserInteractionEnabled = true
+        nameView.isUserInteractionEnabled = true
     }
 
    public func setupEvent(config: TMIconViewConfig) {
-        iconImage.image = UIImage(named: config.icon)
+        iconImage.image = UIImage(data: config.icon)
         if config.name == "" {
             nameView.isHidden = true
         } else {
@@ -65,10 +67,10 @@ open class TMIconView: TMView {
         }
     }
 
-    public func updateInfo(with icon: String, named name: String) {
+    public func updateInfo(with icon: Data, named name: String) {
         config.icon = icon
         config.name = name
-        iconImage.image = UIImage(named: config.icon)
+        iconImage.image = UIImage(data: config.icon)
         if config.name == "" {
             nameView.isHidden = true
         } else {
