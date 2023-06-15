@@ -72,6 +72,9 @@
 		A86DE5CF29CDDEB900E8282A /* TMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CE29CDDEB900E8282A /* TMImageView.swift */; };
 		A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200529BACCB300FD6400 /* TMButton.swift */; };
 		A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */; };
+		A8C4E8B82A3AC6F0001A53D6 /* TMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */; };
+		A8C4E8BA2A3AC731001A53D6 /* TMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8B92A3AC731001A53D6 /* TMTextField.swift */; };
+		A8C4E8BC2A3AC757001A53D6 /* TMTextFieldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8BB2A3AC757001A53D6 /* TMTextFieldConfig.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A38331331EDA1537B8644B0E9B773C34 /* UIImage+Compare.m */; };
 		B543FD108C1C6AF6129CB4991553218B /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58294F97409EA83594FCA42186AF2AF /* ConstraintConfig.swift */; };
 		B6F25863A016B08668E14E610DF6F512 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -245,6 +248,9 @@
 		A86DE5CE29CDDEB900E8282A /* TMImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMImageView.swift; sourceTree = "<group>"; };
 		A8B7200529BACCB300FD6400 /* TMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButton.swift; sourceTree = "<group>"; };
 		A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButtonConfig.swift; sourceTree = "<group>"; };
+		A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNavigationController.swift; sourceTree = "<group>"; };
+		A8C4E8B92A3AC731001A53D6 /* TMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTextField.swift; sourceTree = "<group>"; };
+		A8C4E8BB2A3AC757001A53D6 /* TMTextFieldConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTextFieldConfig.swift; sourceTree = "<group>"; };
 		AE700936B5976B7DA41AB377EDC8F33D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		B839D137867189A76EBA75FDC14106E1 /* TMComponent */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TMComponent; path = TMComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB92B08B85994B159825124DF35E77BA /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
@@ -460,6 +466,8 @@
 				812F218E467F271A3ED50494353D3DD3 /* TMPointComparingViewConfig.swift */,
 				FE3BD62EEBA1B65B58B28F5E5B186C59 /* TMTitleOrImageButton.swift */,
 				2BDAFF8C0D87B0F5538A70803E67C59F /* TMTitleOrImageButtonConfig.swift */,
+				A8C4E8B92A3AC731001A53D6 /* TMTextField.swift */,
+				A8C4E8BB2A3AC757001A53D6 /* TMTextFieldConfig.swift */,
 				A86DE5BF29CDD69800E8282A /* TMLabel.swift */,
 				A86DE5C029CDD69800E8282A /* TMLabelConfig.swift */,
 				A86DE5C229CDD69800E8282A /* TMPopUpView.swift */,
@@ -467,6 +475,7 @@
 				A86DE5BE29CDD69800E8282A /* TMTableView.swift */,
 				76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */,
 				5E70942188D5ED5B496C28B8DF7D19A0 /* TMViewController.swift */,
+				A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */,
 				A8B7200529BACCB300FD6400 /* TMButton.swift */,
 				A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */,
 				365A293E828FDFB295AF9E1FB5907D18 /* UIViewExtension.swift */,
@@ -868,8 +877,10 @@
 			files = (
 				569C46B91F3F9F5DF1BB7CA999F080A9 /* TMBasicPointView.swift in Sources */,
 				A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */,
+				A8C4E8BA2A3AC731001A53D6 /* TMTextField.swift in Sources */,
 				52DD1BD561E1F4BD600BBDAA8357B2AE /* TMBasicPointViewConfig.swift in Sources */,
 				A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */,
+				A8C4E8B82A3AC6F0001A53D6 /* TMNavigationController.swift in Sources */,
 				A86DE5C429CDD69800E8282A /* TMLabel.swift in Sources */,
 				A86DE5C929CDDCA600E8282A /* TMInfoView.swift in Sources */,
 				A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */,
@@ -890,6 +901,7 @@
 				1A510317EECD7451E3E84BDDD0C36462 /* TMViewController.swift in Sources */,
 				1C7B247AC56F791027C7082766236C5F /* UIViewExtension.swift in Sources */,
 				A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */,
+				A8C4E8BC2A3AC757001A53D6 /* TMTextFieldConfig.swift in Sources */,
 				A86DE5CF29CDDEB900E8282A /* TMImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

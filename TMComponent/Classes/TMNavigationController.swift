@@ -1,29 +1,27 @@
 //
-//  TMViewControllerExtension.swift
-//  TennisMoment
+//  TMNavigationController.swift
+//  TMComponent
 //
-//  Created by Jason Zhang on 2022/12/27.
+//  Created by Jason Zhang on 2023/6/15.
 //
 
 import Foundation
 import UIKit
 
-/// TM基础VC
-public class TMViewController: UIViewController {
-    public override func viewWillAppear(_ animated: Bool) {
+ class EDNavigationController: UINavigationController {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
 
-    public override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.isHidden = false
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = ""
         navigationController?.navigationBar.tintColor = UIColor(named: "ContentBackground")
-        view.backgroundColor = UIColor(named: "BackgroundGray")
     }
-}
+ }

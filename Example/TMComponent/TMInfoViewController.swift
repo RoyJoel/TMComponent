@@ -18,7 +18,7 @@ open class TMInfoViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        let config = TMIconViewConfig(icon: "JasonZhang", name: "张嘉诚")
+        let config = TMIconViewConfig(icon: Data(), name: "张嘉诚")
         oView.setup(with: config)
         view.addSubview(oView)
         oView.snp.makeConstraints { make in
