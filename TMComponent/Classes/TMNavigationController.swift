@@ -8,18 +8,18 @@
 import Foundation
 import UIKit
 
- class EDNavigationController: UINavigationController {
-    override func viewWillAppear(_ animated: Bool) {
+ open class TMNavigationController: UINavigationController {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.isHidden = false
     }
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = ""
         navigationController?.navigationBar.tintColor = UIColor(named: "ContentBackground")

@@ -70,6 +70,9 @@
 		A86DE5CB29CDDCC600E8282A /* TMInfoViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */; };
 		A86DE5CD29CDDEA000E8282A /* TMImageViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CC29CDDEA000E8282A /* TMImageViewConfig.swift */; };
 		A86DE5CF29CDDEB900E8282A /* TMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CE29CDDEB900E8282A /* TMImageView.swift */; };
+		A87EB1232A3AE73A002D5B6C /* TMSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EB1222A3AE73A002D5B6C /* TMSelectionView.swift */; };
+		A87EB1252A3AE78B002D5B6C /* TMServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EB1242A3AE78B002D5B6C /* TMServerView.swift */; };
+		A87EB1272A3AE7C9002D5B6C /* TMServerViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EB1262A3AE7C9002D5B6C /* TMServerViewConfig.swift */; };
 		A8B7200729BACCB300FD6400 /* TMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200529BACCB300FD6400 /* TMButton.swift */; };
 		A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */; };
 		A8C4E8B82A3AC6F0001A53D6 /* TMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */; };
@@ -246,6 +249,9 @@
 		A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMInfoViewConfig.swift; sourceTree = "<group>"; };
 		A86DE5CC29CDDEA000E8282A /* TMImageViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMImageViewConfig.swift; sourceTree = "<group>"; };
 		A86DE5CE29CDDEB900E8282A /* TMImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMImageView.swift; sourceTree = "<group>"; };
+		A87EB1222A3AE73A002D5B6C /* TMSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSelectionView.swift; sourceTree = "<group>"; };
+		A87EB1242A3AE78B002D5B6C /* TMServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMServerView.swift; sourceTree = "<group>"; };
+		A87EB1262A3AE7C9002D5B6C /* TMServerViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMServerViewConfig.swift; sourceTree = "<group>"; };
 		A8B7200529BACCB300FD6400 /* TMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButton.swift; sourceTree = "<group>"; };
 		A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButtonConfig.swift; sourceTree = "<group>"; };
 		A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNavigationController.swift; sourceTree = "<group>"; };
@@ -475,6 +481,9 @@
 				A86DE5BE29CDD69800E8282A /* TMTableView.swift */,
 				76DAB53F01DDD2D2FFB5463D55D60C82 /* TMView.swift */,
 				5E70942188D5ED5B496C28B8DF7D19A0 /* TMViewController.swift */,
+				A87EB1222A3AE73A002D5B6C /* TMSelectionView.swift */,
+				A87EB1242A3AE78B002D5B6C /* TMServerView.swift */,
+				A87EB1262A3AE7C9002D5B6C /* TMServerViewConfig.swift */,
 				A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */,
 				A8B7200529BACCB300FD6400 /* TMButton.swift */,
 				A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */,
@@ -875,6 +884,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87EB1252A3AE78B002D5B6C /* TMServerView.swift in Sources */,
 				569C46B91F3F9F5DF1BB7CA999F080A9 /* TMBasicPointView.swift in Sources */,
 				A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */,
 				A8C4E8BA2A3AC731001A53D6 /* TMTextField.swift in Sources */,
@@ -886,6 +896,7 @@
 				A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */,
 				2741380B33464A0E0546A52B16098950 /* TMComponent-dummy.m in Sources */,
 				CD15E791104F758D7903A33F77045CB2 /* TMIconView.swift in Sources */,
+				A87EB1232A3AE73A002D5B6C /* TMSelectionView.swift in Sources */,
 				D0050F335756E79622B1E6C63D9A6AC3 /* TMIconViewConfig.swift in Sources */,
 				05C5050C11FD6394E663D07C509E7E00 /* TMmultiplyConfigurableView.swift in Sources */,
 				337C77ADE09DA8F2D0C91FCC8CD498C9 /* TMmultiplyConfigurableViewConfig.swift in Sources */,
@@ -896,6 +907,7 @@
 				C584B59A2F68CBF3C7ADAF1E24387749 /* TMTitleOrImageButtonConfig.swift in Sources */,
 				A86DE5C529CDD69800E8282A /* TMLabelConfig.swift in Sources */,
 				65C0D401FA02C186C95182743434F4FE /* TMView.swift in Sources */,
+				A87EB1272A3AE7C9002D5B6C /* TMServerViewConfig.swift in Sources */,
 				A86DE5CD29CDDEA000E8282A /* TMImageViewConfig.swift in Sources */,
 				A86DE5CB29CDDCC600E8282A /* TMInfoViewConfig.swift in Sources */,
 				1A510317EECD7451E3E84BDDD0C36462 /* TMViewController.swift in Sources */,

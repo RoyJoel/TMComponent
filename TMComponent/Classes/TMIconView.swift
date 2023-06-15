@@ -81,30 +81,5 @@ open class TMIconView: TMView {
 
     public override func scaleTo(_ isEnlarge: Bool) {
         super.scaleTo(isEnlarge)
-//        UIView.animate(withDuration: 0.3) {
-//            self.iconImage.snp.updateConstraints { make in
-//                make.centerX.equalToSuperview()
-//                make.left.equalToSuperview().offset(8)
-//                make.right.equalToSuperview().offset(-8)
-//                make.width.equalToSuperview().offset(-16)
-//                make.height.equalToSuperview().offset(-16)
-//                make.top.equalToSuperview().offset(8)
-//                make.bottom.equalTo(self.nameView.snp.top).offset(-8)
-//            }
-//            self.nameView.snp.updateConstraints { make in
-//                make.bottom.equalToSuperview().offset(-8)
-//                make.top.equalTo(self.iconImage.snp.bottom).offset(8)
-//                make.centerX.equalTo(self.iconImage.snp.centerX)
-//            }
-//        }
-//        addGroupAnimation(with: [iconImage,nameView], isEnlarge: isEnlarge)
     }
-
-//    override func didScaleTo(_ isEnlarge: Bool) {
-//        super.didScaleTo(isEnlarge)
-//        print(iconImage.layer.position)
-//        print(iconImage.layer.bounds)
-    ////        iconImage.scaleTo(isEnlarge)
-    ////        nameView.scaleTo(isEnlarge)
-//    }
 }
