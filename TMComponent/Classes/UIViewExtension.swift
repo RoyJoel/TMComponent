@@ -26,9 +26,24 @@ extension UIView {
         layer.borderWidth = width
     }
 
+    public func removeBorder() {
+        layer.borderColor = nil
+        layer.borderWidth = 0
+    }
+
     public func addTapGesture(_ target: Any, _ action: Selector?) {
         let tap = UITapGestureRecognizer(target: target, action: action)
         addGestureRecognizer(tap)
+    }
+
+    public func addLongPressGesture(_ target: Any, _ action: Selector?) {
+        let longPress = UILongPressGestureRecognizer(target: target, action: action)
+        addGestureRecognizer(longPress)
+    }
+
+    public func addPanGesture(_ target: Any, _ action: Selector?) {
+        let pan = UIPanGestureRecognizer(target: target, action: action)
+        addGestureRecognizer(pan)
     }
 
     public func removeTapGesture(_ target: Any, _ action: Selector?) {
@@ -59,5 +74,18 @@ extension UIView {
         }
         layer.add(animation, forKey: forKey)
         CATransaction.commit()
+    }
+
+    public func getParentViewController() -> UIViewController? {
+        for view in sequence(first: superview, next: { view in
+            view?.superview
+        }) {
+            if let responder = view?.next {
+                if responder.isKind(of: UIViewController.self) {
+                    return responder as? UIViewController
+                }
+            }
+        }
+        return nil
     }
 }
