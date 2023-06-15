@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 open class TMSelectionView: UIView {
-    var isLeft: Bool = true
+    public var isLeft: Bool = true
+    
     lazy var leftServerView: TMServerView = {
         let serveView = TMServerView()
         return serveView
