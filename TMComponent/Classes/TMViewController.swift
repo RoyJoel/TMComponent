@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /// TM基础VC
-public class TMViewController: UIViewController {
+open class TMViewController: UIViewController {
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
