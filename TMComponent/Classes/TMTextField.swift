@@ -44,7 +44,7 @@ open class TMTextField: UIView, UITextFieldDelegate {
         textField.text = text
     }
     
-    public func getText(_ text: String) -> String? {
+    public func getText() -> String? {
         textField.text
     }
 }
