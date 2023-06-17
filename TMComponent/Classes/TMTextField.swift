@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 open class TMTextField: UIView, UITextFieldDelegate {
-    public lazy var textField: UITextField = {
+    private lazy var textField: UITextField = {
         let textField = UITextField()
         textField.font = UIFont.systemFont(ofSize: 22)
         return textField
@@ -38,6 +38,13 @@ open class TMTextField: UIView, UITextFieldDelegate {
 
     public func setupEvent(config: TMTextFieldConfig) {
         textField.placeholder = config.placeholderText
-        textField.text = config.text
+    }
+    
+    public func setText(_ text: String) {
+        textField.text = text
+    }
+    
+    public func getText(_ text: String) -> String? {
+        textField.text
     }
 }
