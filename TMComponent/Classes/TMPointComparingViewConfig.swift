@@ -9,19 +9,29 @@ import Foundation
 import UIKit
 
 open class TMPointComparingViewConfig {
-    public var isTitleViewAbovePointView: Bool
+    /// 标题标签是否在比分视图之上
+    public var isTitleLabelAbovePointView: Bool
+    /// 标题标签是否隐藏
     public var isTitleHidden: Bool
+    /// 标题内容
     public var title: String?
+    /// 本地头像名称
     public var iconName: String?
+    /// 当前是否左侧高亮
     public var isServingOnLeft: Bool
+    /// 是否两侧高亮
     public var areBothServing: Bool
+    /// 是否需要高亮
     public var isComparing: Bool
+    /// 字体
     public var font: UIFont
-    public var leftNum: String
-    public var rightNum: String
+    /// 左侧标签内容
+    public var leftText: String
+    /// 右侧标签内容
+    public var rightText: String
 
-    public init(isTitleViewAbovePointView: Bool, isTitleHidden: Bool, title: String? = nil, iconName: String? = nil, isServingOnLeft: Bool, areBothServing: Bool, isComparing: Bool, font: UIFont, leftNum: String, rightNum: String) {
-        self.isTitleViewAbovePointView = isTitleViewAbovePointView
+    public init(isTitleLabelAbovePointView: Bool, isTitleHidden: Bool, title: String? = nil, iconName: String? = nil, isServingOnLeft: Bool, areBothServing: Bool, isComparing: Bool, font: UIFont, leftText: String, rightText: String) {
+        self.isTitleLabelAbovePointView = isTitleLabelAbovePointView
         self.isTitleHidden = isTitleHidden
         self.title = title
         self.iconName = iconName
@@ -29,7 +39,7 @@ open class TMPointComparingViewConfig {
         self.areBothServing = areBothServing
         self.isComparing = isComparing
         self.font = font
-        self.leftNum = leftNum
-        self.rightNum = rightNum
+        self.leftText = leftText
+        self.rightText = rightText
     }
 }

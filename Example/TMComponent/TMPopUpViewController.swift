@@ -25,7 +25,6 @@ class TMPopUpViewController: UIViewController, UITableViewDataSource {
         view.addSubview(oView)
         
         oView.frame = CGRect(x: 12, y: 12, width: 300, height: 30)
-        oView.setupUI()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

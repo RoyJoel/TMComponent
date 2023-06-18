@@ -8,26 +8,23 @@
 import Foundation
 import UIKit
 
+/// 有图片时仅显示图片，无图片时显示文字
 open class TMTitleOrImageButton: UIButton {
-    public var config = TMTitleOrImageButtonConfig(action: #selector(method), actionTarget: TMTitleOrImageButton.self)
-
+    /// 可选的图片视图
     private lazy var optionalImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.setCorner(radii: 15)
         return imageView
     }()
-
+    /// 可选的标题标签
     private lazy var optionalTitleLabel: UILabel = {
         let label = UILabel()
         return label
     }()
 
-    public func setUp(with config: TMTitleOrImageButtonConfig) {
-        setupUI()
-        setupEvent(config: config)
-    }
-
-    private func setupUI() {
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
         setTitleColor(UIColor(named: "ContentBackground"), for: .normal)
         setTitleColor(UIColor(named: "TennisBlur"), for: .selected)
         backgroundColor = UIColor(named: "ComponentBackground")
@@ -37,9 +34,6 @@ open class TMTitleOrImageButton: UIButton {
 
         addSubview(optionalImageView)
         addSubview(optionalTitleLabel)
-
-        optionalTitleLabel.numberOfLines = 1
-        optionalTitleLabel.textAlignment = .center
 
         optionalImageView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -51,12 +45,18 @@ open class TMTitleOrImageButton: UIButton {
             make.width.equalToSuperview().offset(-30)
             make.height.equalTo(30)
         }
+        
+        optionalTitleLabel.numberOfLines = 1
+        optionalTitleLabel.textAlignment = .center
         optionalImageView.isHidden = true
         optionalTitleLabel.isHidden = true
     }
-
-    private func setupEvent(config: TMTitleOrImageButtonConfig) {
-        self.config = config
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func setupEvent(config: TMTitleOrImageButtonConfig) {
         addTapGesture(config.actionTarget, config.action)
 
         if let image = config.image {
@@ -73,6 +73,7 @@ open class TMTitleOrImageButton: UIButton {
             }
         } else {
             optionalImageView.isHidden = true
+            
             if let title = config.title {
                 optionalTitleLabel.isHidden = false
 

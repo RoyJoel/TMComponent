@@ -7,23 +7,17 @@
 import Foundation
 import UIKit
 
-open class TMTextField: UIView, UITextFieldDelegate {
-    private lazy var textField: UITextField = {
+open class TMTextField: UIView {
+    /// 文本框
+    public lazy var textField: UITextField = {
         let textField = UITextField()
         textField.font = UIFont.systemFont(ofSize: 22)
         return textField
     }()
-
-    public func setup(with config: TMTextFieldConfig) {
-        setupUI()
-        setupEvent(config: config)
-    }
-
-    public func updateText(_ text: String) {
-        textField.text = text
-    }
-
-    public func setupUI() {
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
         backgroundColor = UIColor(named: "TennisBlurTextField")
         setCorner(radii: 15)
 
@@ -35,16 +29,21 @@ open class TMTextField: UIView, UITextFieldDelegate {
             make.width.equalToSuperview().offset(-20)
         }
     }
-
-    public func setupEvent(config: TMTextFieldConfig) {
-        textField.placeholder = config.placeholderText
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
-    public func setText(_ text: String) {
-        textField.text = text
-    }
-    
-    public func getText() -> String? {
-        textField.text
-    }
+    // 目前没有想到更好的配置方案，所以暂时不做配置项，直接对textfield作修改
+//    public func setupEvent(config: TMTextFieldConfig) {
+//        textField.placeholder = config.placeholderText
+//    }
+//
+//    public func setText(_ text: String) {
+//        textField.text = text
+//    }
+//
+//    public func getText() -> String? {
+//        textField.text
+//    }
 }

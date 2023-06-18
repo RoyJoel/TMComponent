@@ -8,9 +8,13 @@
 import Foundation
 
 open class TMServerViewConfig {
+    /// 选中时图片
     public var selectedImage: String
+    /// 未选中时图片
     public var unSelectedImage: String
+    /// 选中时标题
     public var selectedTitle: String
+    /// 未选中时标题
     public var unselectedTitle: String
 
     public init(selectedImage: String, unSelectedImage: String, selectedTitle: String, unselectedTitle: String) {

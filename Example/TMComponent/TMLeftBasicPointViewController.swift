@@ -20,8 +20,8 @@ class TMLeftBasicPointViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        let config = TMBasicPointViewConfig(isLeft: true, iconName: "Jason Zhang", isServing: true, num: "100", font: UIFont.systemFont(ofSize: 20))
-        oView.setup(with: config)
+        let config = TMBasicPointViewConfig(isLeft: true, iconName: "Jason Zhang", isServing: true, text: "100", font: UIFont.systemFont(ofSize: 20))
+        oView.setupEvent(config: config)
         
         view.addSubview(oView)
         

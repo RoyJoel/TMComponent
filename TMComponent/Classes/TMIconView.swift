@@ -11,75 +11,67 @@ import UIKit
 
 /// 基本信息视图，使用时需设置宽高，图片大小将随之变化
 open class TMIconView: TMView {
-    public var config = TMIconViewConfig(icon: Data(), name: "")
-
+    /// 头像视图
     private lazy var iconImage: UIImageView = {
-        var image = UIImageView()
-        image.setCorner(radii: 15)
-        image.drawBorder(color: .white, width: 5)
-        return image
+        let imageView = UIImageView()
+        imageView.setCorner(radii: 15)
+        imageView.drawBorder(color: .white, width: 5)
+        return imageView
+    }()
+    /// 昵称标签
+    private lazy var nameLabel: UILabel = {
+        let label = UILabel()
+        return label
     }()
 
-    private lazy var nameView: UILabel = {
-        var view = UILabel()
-        return view
-    }()
-
-    public func setup(with config: TMIconViewConfig) {
-        self.config = config
-
-        setupUI()
-        setupEvent(config: config)
-    }
-
-    public func setupUI() {
-        clipsToBounds = false
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
         addSubview(iconImage)
-        addSubview(nameView)
-
-        nameView.isHidden = false
-        iconImage.contentMode = .scaleAspectFill
+        addSubview(nameLabel)
 
         iconImage.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
             make.left.equalToSuperview().offset(8)
             make.right.equalToSuperview().offset(-8)
-            make.width.equalToSuperview().offset(-16)
             make.top.equalToSuperview().offset(8)
+            make.bottom.equalTo(nameLabel.snp.top).offset(-8)
         }
-        nameView.snp.makeConstraints { make in
+        nameLabel.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-8)
-            make.top.equalTo(iconImage.snp.bottom).offset(8)
-            make.height.equalTo(30)
+            make.height.equalTo(20)
             make.centerX.equalTo(self.iconImage.snp.centerX)
         }
+        
+        nameLabel.isHidden = false
+        iconImage.contentMode = .scaleAspectFill
         iconImage.isUserInteractionEnabled = true
-        nameView.isUserInteractionEnabled = true
+        nameLabel.isUserInteractionEnabled = true
     }
-
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
    public func setupEvent(config: TMIconViewConfig) {
         iconImage.image = UIImage(data: config.icon)
+       
         if config.name == "" {
-            nameView.isHidden = true
+            nameLabel.isHidden = true
         } else {
-            nameView.isHidden = false
-            nameView.text = config.name
+            nameLabel.isHidden = false
+            nameLabel.text = config.name
         }
     }
 
+    /// 更新头像、昵称
     public func updateInfo(with icon: Data, named name: String) {
-        config.icon = icon
-        config.name = name
-        iconImage.image = UIImage(data: config.icon)
-        if config.name == "" {
-            nameView.isHidden = true
+        iconImage.image = UIImage(data: icon)
+        
+        if name == "" {
+            nameLabel.isHidden = true
         } else {
-            nameView.isHidden = false
-            nameView.text = config.name
+            nameLabel.isHidden = false
+            nameLabel.text = name
         }
-    }
-
-    public override func scaleTo(_ isEnlarge: Bool) {
-        super.scaleTo(isEnlarge)
     }
 }

@@ -8,8 +8,11 @@
 import Foundation
 
 open class TMButtonConfig {
+    /// 标题
     public var title: String
+    
     public var action: Selector?
+    
     public var actionTarget: Any
 
     public init(title: String, action: Selector? = nil, actionTarget: Any) {

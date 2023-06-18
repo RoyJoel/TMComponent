@@ -68,25 +68,22 @@ open class TMView: UIView {
         }
     }
 
-    public func addGroupAnimation(with views: [UIView], isEnlarge: Bool) {
-        let widthRatio = newBounds.width / originalBounds.width
-//        let heightRatio = self.newBounds.height / self.originalBounds.height
-        let xDistance = newPoint.x - originalPoint.x
-        let yDistance = newPoint.y - originalPoint.y
-
-        if isEnlarge {
-            for view in views {
-                view.addAnimation(view.layer.position, CGPoint(x: view.layer.position.x + xDistance, y: view.layer.position.y + yDistance), duration, "position")
-                view.addAnimation(view.bounds, CGRect(x: 0, y: 0, width: view.bounds.width * widthRatio, height: view.bounds.height * widthRatio), duration, "bounds")
-//                print(view.layer.position)
-//                print(xDistance,yDistance)
-//                print(CGPoint(x: view.layer.position.x + xDistance, y: view.layer.position.y + yDistance))
-            }
-        } else {
-            for view in views {
-                view.addAnimation(CGPoint(x: view.layer.position.x + xDistance, y: view.layer.position.y + yDistance), view.layer.position, duration, "position")
-                view.addAnimation(CGRect(x: 0, y: 0, width: view.bounds.width * widthRatio, height: view.bounds.height * widthRatio), view.bounds, duration, "bounds")
-            }
-        }
-    }
+    // 组动画，但目前还没有好的实现方案，暂时搁置
+//    public func addGroupAnimation(with views: [UIView], isEnlarge: Bool) {
+//        let widthRatio = newBounds.width / originalBounds.width
+//        let xDistance = newPoint.x - originalPoint.x
+//        let yDistance = newPoint.y - originalPoint.y
+//
+//        if isEnlarge {
+//            for view in views {
+//                view.addAnimation(view.layer.position, CGPoint(x: view.layer.position.x + xDistance, y: view.layer.position.y + yDistance), duration, "position")
+//                view.addAnimation(view.bounds, CGRect(x: 0, y: 0, width: view.bounds.width * widthRatio, height: view.bounds.height * widthRatio), duration, "bounds")
+//            }
+//        } else {
+//            for view in views {
+//                view.addAnimation(CGPoint(x: view.layer.position.x + xDistance, y: view.layer.position.y + yDistance), view.layer.position, duration, "position")
+//                view.addAnimation(CGRect(x: 0, y: 0, width: view.bounds.width * widthRatio, height: view.bounds.height * widthRatio), view.bounds, duration, "bounds")
+//            }
+//        }
+//    }
 }

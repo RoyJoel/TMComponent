@@ -8,56 +8,56 @@
 import Foundation
 
 open class TMInfoView: TMView {
-    public var config = TMInfoViewConfig(infoContent: "", infoContentFont: 0, infoTitle: "", infoTitleFont: 0, inset: 0)
-
-    private lazy var infoContentView: UILabel = {
-        var view = UILabel()
-        return view
+    /// 标题标签
+    private lazy var infoTitleLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    /// 内容标签
+    private lazy var infoContentLabel: UILabel = {
+        let label = UILabel()
+        return label
     }()
 
-    private lazy var infoTitleView: UILabel = {
-        var view = UILabel()
-        return view
-    }()
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        addSubview(infoContentLabel)
+        addSubview(infoTitleLabel)
 
-    public func setup(with config: TMInfoViewConfig) {
-        self.config = config
-
-        setupUI()
-        setupEvent(config: config)
-    }
-
-    public func setupUI() {
-        backgroundColor = UIColor(named: "ComponentBackground")
-        addSubview(infoContentView)
-        addSubview(infoTitleView)
-
-        infoContentView.snp.makeConstraints { make in
+        infoTitleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview()
         }
-        infoTitleView.snp.makeConstraints { make in
+        infoContentLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview()
         }
+        
+        backgroundColor = UIColor(named: "ComponentBackground")
     }
-
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public func setupEvent(config: TMInfoViewConfig) {
-        infoContentView.text = config.infoContent
-        infoContentView.font = UIFont.systemFont(ofSize: config.infoContentFont)
-        infoTitleView.text = config.infoTitle
-        infoTitleView.font = UIFont.systemFont(ofSize: config.infoTitleFont)
-        infoContentView.snp.remakeConstraints { make in
+        infoContentLabel.text = config.infoContent
+        infoContentLabel.font = config.infoContentFont
+        infoTitleLabel.text = config.infoTitle
+        infoTitleLabel.font = config.infoTitleFont
+        
+        infoTitleLabel.snp.remakeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(config.inset)
         }
-        infoTitleView.snp.remakeConstraints { make in
+        infoContentLabel.snp.remakeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().offset(-config.inset)
         }
     }
 
-    public func updateInfo(with newData: String) {
-        infoContentView.text = newData
+    public func updateInfo(with newText: String) {
+        infoContentLabel.text = newText
     }
 }

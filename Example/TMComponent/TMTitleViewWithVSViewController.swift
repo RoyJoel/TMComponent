@@ -18,8 +18,8 @@ class TMTitleViewWithVSViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        let config = TMPointComparingViewConfig(isTitleViewAbovePointView: false, isTitleHidden: false, title: "标题在中", iconName: "Jason Zhang", isServingOnLeft: true, areBothServing: false, isComparing: true, font: UIFont.systemFont(ofSize: 20), leftNum: "100", rightNum: "100")
-        oView.setup(with: config)
+        let config = TMPointComparingViewConfig(isTitleLabelAbovePointView: false, isTitleHidden: false, title: "标题在中", iconName: "Jason Zhang", isServingOnLeft: true, areBothServing: false, isComparing: true, font: UIFont.systemFont(ofSize: 20), leftText: "100", rightText: "100")
+        oView.setupEvent(config: config)
         
         view.addSubview(oView)
         

@@ -8,8 +8,11 @@
 import Foundation
 
 open class TMLabelConfig {
+    /// 标题
     public var title: String
+    /// 字体
     public var font: CGFloat
+    
     public init(title: String, font: CGFloat) {
         self.title = title
         self.font = font

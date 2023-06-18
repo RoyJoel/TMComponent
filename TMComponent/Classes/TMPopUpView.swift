@@ -9,15 +9,22 @@ import Foundation
 import UIKit
 
 open class TMPopUpView: TMTableView, UITableViewDelegate {
+    /// 已选索引
     public var selectedIndex: IndexPath?
+    /// 选择后的闭包
     public var selectedCompletionHandler: ((Int) -> Void)?
 
-    public override func setupUI() {
+    public override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+        
         setCorner(radii: 8)
-        super.setupUI()
         setupSize()
     }
-
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     open func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         if toggle == false {
             deselectRow(at: IndexPath(row: 0, section: 0), animated: false)
@@ -25,6 +32,7 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
         } else {
             selectedIndex = indexPath
             (selectedCompletionHandler ?? { _ in })(indexPath.row)
+            // 对齐
             setContentOffset(CGPoint(x: 0, y: 0), animated: false)
             UIView.performWithoutAnimation {
                 moveRow(at: indexPath, to: IndexPath(row: 0, section: 0))
@@ -34,6 +42,7 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
         }
     }
 
+    /// 确定抽屉的大小
     public func setupSize() {
         var scaledNum: CGFloat = 0
         var scaledHeight: CGFloat = 0
@@ -44,6 +53,7 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
             scaledNum = CGFloat(numberOfRows(inSection: 0))
             scaledHeight = layer.position.y + CGFloat(numberOfRows(inSection: 0) - 1) * 0.5 * bounds.height
         }
+        
         setup(bounds, layer.position, CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height * scaledNum), CGPoint(x: layer.position.x, y: scaledHeight), 0.3)
     }
 

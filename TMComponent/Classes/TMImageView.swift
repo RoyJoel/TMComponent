@@ -9,15 +9,17 @@ import Foundation
 import UIKit
 
 open class TMImageView: UIImageView {
-    public func setup(config: TMImageViewConfig) {
-        setupUI()
-        setupEvent(config: config)
-    }
 
-    public func setupUI() {
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
         setCorner(radii: 15)
     }
-
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public func setupEvent(config: TMImageViewConfig) {
         image = UIImage(data: config.image)
         contentMode = config.contentMode
