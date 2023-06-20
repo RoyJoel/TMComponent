@@ -18,7 +18,6 @@ open class TMPopUpView: TMTableView, UITableViewDelegate {
         super.init(frame: frame, style: style)
         
         setCorner(radii: 8)
-        setupSize()
     }
     
     required public init?(coder: NSCoder) {

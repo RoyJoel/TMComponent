@@ -13,7 +13,7 @@ import TMComponent
 class TMPopUpViewController: UIViewController, UITableViewDataSource {
     
     lazy var oView: TMPopUpView = {
-        let view = TMPopUpView()
+        let view = TMPopUpView(frame: CGRect(x: 12, y: 58, width: 300, height: 30), style: .plain)
         return view
     }()
     override func viewDidLoad() {
@@ -21,10 +21,9 @@ class TMPopUpViewController: UIViewController, UITableViewDataSource {
         view.backgroundColor = .white
         
         oView.dataSource = self
-        
+        oView.setupSize()
+        oView.delegate = oView
         view.addSubview(oView)
-        
-        oView.frame = CGRect(x: 12, y: 12, width: 300, height: 30)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,13 +31,10 @@ class TMPopUpViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TMPopUpCustomCell()
-        cell.setupUI()
+        let cell = TMPopUpCell()
         cell.setupEvent(title: "fasdfasfasdf")
-        return cell
+        return cell 
     }
-    
-    
 }
 
 class TMPopUpCustomCell: UITableViewCell{
