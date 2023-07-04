@@ -23,7 +23,6 @@ import UIKit
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.title = ""
         navigationController?.navigationBar.tintColor = UIColor(named: "ContentBackground")
     }

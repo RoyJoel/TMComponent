@@ -48,23 +48,44 @@ open class TMTableView: UITableView {
         self.duration = duration
     }
     /// 展开
-    open func unfold() {
+    open func unfold(completionHandler: (() -> Void)? = nil) {
         isScrollEnabled = true
         toggle = true
         addAnimation(originalPoint, newPoint, duration, "position", completionHandler: {})
-        addAnimation(originalBounds, newBounds, duration, "bounds", completionHandler: {})
+        addAnimation(originalBounds, newBounds, duration, "bounds", completionHandler: {
+            (completionHandler ?? {})()
+        })
         bounds = newBounds
         layer.position = newPoint
     }
     /// 折叠
-    open func fold() {
+    open func fold(completionHandler: (() -> Void)? = nil) {
         // 折叠后不可滑动
         isScrollEnabled = false
         toggle = false
         addAnimation(newBounds, originalBounds, duration, "bounds", completionHandler: {})
-        addAnimation(newPoint, originalPoint, duration, "position", completionHandler: {})
+        addAnimation(newPoint, originalPoint, duration, "position", completionHandler: {
+            (completionHandler ?? {})()
+        })
         bounds = originalBounds
         layer.position = originalPoint
     }
+    
+    open func scaleTo(_ isEnlarge: Bool) {
+        if isEnlarge {
+            fold()
+        }else {
+            unfold()
+        }
+    }
+    
+    open func scaleTo(_ isEnlarge: Bool, completionHandler: @escaping () -> Void) {
+        if isEnlarge {
+            fold(completionHandler: completionHandler)
+        }else {
+            unfold(completionHandler: completionHandler)
+        }
+    }
 }
+
 
