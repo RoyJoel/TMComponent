@@ -31,7 +31,7 @@ open class TMBasicButton: UIView {
     }
     
     public func setupEvent(config: TMButtonConfig) {
-        addTapGesture(config.actionTarget, config.action)
+        button.addTapGesture(config.actionTarget, config.action)
 
         if let image = config.image {
             button.setImage(image, for: .normal)
