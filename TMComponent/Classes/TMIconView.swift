@@ -10,7 +10,7 @@ import SnapKit
 import UIKit
 
 /// 基本信息视图，使用时需设置宽高，图片大小将随之变化
-open class TMIconView: TMView {
+open class TMIconView: TMScalableView {
     /// 头像视图
     private lazy var iconImage: UIImageView = {
         let imageView = UIImageView()

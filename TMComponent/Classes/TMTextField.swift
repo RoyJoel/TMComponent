@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 open class TMTextField: UIView {
-    /// 文本框
+    
     public lazy var textField: UITextField = {
         let textField = UITextField()
         textField.font = UIFont.systemFont(ofSize: 22)

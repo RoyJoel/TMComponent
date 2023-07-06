@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /// TM双方得分视图，使用时仅需设置宽度
-open class TMPointComparingView: TMView {
+open class TMPointComparingView: TMScalableView {
     /// 标题标签
     private lazy var titleLabel: UILabel = {
         let label = UILabel()

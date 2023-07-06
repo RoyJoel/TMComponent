@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /// TM可配置多条比分视图
-open class TMmultiplyConfigurableView: TMView {
+open class TMmultiplyConfigurableView: TMScalableView {
     /// 配备的比分视图数组
     var vsViews: [TMPointComparingView] = []
     

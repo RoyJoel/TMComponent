@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 /// TM基础分数视图
-open class TMBasicPointView: TMView {
+open class TMBasicPointView: TMScalableView {
     /// 高亮图片，为后面的集成比分使用
     private lazy var highLightImage: UIImageView = {
         let imageView = UIImageView()

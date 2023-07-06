@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class TMInfoView: TMView {
+open class TMInfoView: TMScalableView {
     /// 标题标签
     private lazy var infoTitleLabel: UILabel = {
         let label = UILabel()

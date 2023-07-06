@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class TMServerView: TMView {
+open class TMServerView: TMScalableView {
     /// 配置项
     private var config = TMServerViewConfig(selectedImage: "", unSelectedImage: "", selectedTitle: "", unselectedTitle: "")
     public lazy var selectionView: UIImageView = {
