@@ -21,7 +21,7 @@ open class TMScalableView: UIView, TMScalable {
     /// 持续时间
     internal var duration: CFTimeInterval = 0
     /// 开关，控制图像伸缩状态
-    internal var toggle: Bool = false
+    public var toggle: Bool = false
     /// 初始化原始位置与新位置
     public func setup(originalBounds: CGRect, originalPoint: CGPoint, newBounds: CGRect, newPoint: CGPoint, duration: CFTimeInterval) {
         self.originalBounds = originalBounds
