@@ -18,6 +18,7 @@ open class TMBasicButton: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setCorner(radii: 10)
+        button.setTitleColor(UIColor(named: "ContentBackground"), for: .normal)
         backgroundColor = UIColor(named: "ComponentBackground")
         
         addSubview(button)
