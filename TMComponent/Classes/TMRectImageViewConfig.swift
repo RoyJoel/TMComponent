@@ -1,5 +1,5 @@
 //
-//  TMImageView.swift
+//  TMRectImageViewConfig.swift
 //  TMComponent
 //
 //  Created by Jason Zhang on 2023/3/24.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class TMImageViewConfig {
+open class TMRectImageViewConfig {
     // 图像
     public var image: Data
     // 图像显示模式

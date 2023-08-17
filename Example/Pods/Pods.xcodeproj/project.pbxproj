@@ -69,19 +69,19 @@
 		A85C9DA62A565C0C009A1000 /* TMRectButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9DA52A565C0C009A1000 /* TMRectButtonConfig.swift */; };
 		A85C9DA82A565E16009A1000 /* TMHighlightedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9DA72A565E16009A1000 /* TMHighlightedLabel.swift */; };
 		A85C9DAA2A565F91009A1000 /* TMHighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9DA92A565F91009A1000 /* TMHighlightedButton.swift */; };
-		A85C9DAC2A5662C4009A1000 /* TMLabelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9DAB2A5662C4009A1000 /* TMLabelConfig.swift */; };
+		A85C9DAC2A5662C4009A1000 /* TMBasicLabelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C9DAB2A5662C4009A1000 /* TMBasicLabelConfig.swift */; };
 		A86DE5C329CDD69800E8282A /* TMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5BE29CDD69800E8282A /* TMTableView.swift */; };
 		A86DE5C429CDD69800E8282A /* TMScalableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5BF29CDD69800E8282A /* TMScalableLabel.swift */; };
 		A86DE5C629CDD69800E8282A /* TMPopUpViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */; };
 		A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C229CDD69800E8282A /* TMPopUpView.swift */; };
 		A86DE5C929CDDCA600E8282A /* TMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5C829CDDCA600E8282A /* TMInfoView.swift */; };
 		A86DE5CB29CDDCC600E8282A /* TMInfoViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */; };
-		A86DE5CD29CDDEA000E8282A /* TMImageViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CC29CDDEA000E8282A /* TMImageViewConfig.swift */; };
+		A86DE5CD29CDDEA000E8282A /* TMRectImageViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CC29CDDEA000E8282A /* TMRectImageViewConfig.swift */; };
 		A86DE5CF29CDDEB900E8282A /* TMRectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86DE5CE29CDDEB900E8282A /* TMRectImageView.swift */; };
 		A87EB1232A3AE73A002D5B6C /* TMSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EB1222A3AE73A002D5B6C /* TMSelectionView.swift */; };
 		A87EB1252A3AE78B002D5B6C /* TMServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EB1242A3AE78B002D5B6C /* TMServerView.swift */; };
 		A87EB1272A3AE7C9002D5B6C /* TMServerViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EB1262A3AE7C9002D5B6C /* TMServerViewConfig.swift */; };
-		A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */; };
+		A8B7200829BACCB300FD6400 /* TMBasicButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7200629BACCB300FD6400 /* TMBasicButtonConfig.swift */; };
 		A8C4E8B82A3AC6F0001A53D6 /* TMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */; };
 		A8C4E8BA2A3AC731001A53D6 /* TMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8B92A3AC731001A53D6 /* TMTextField.swift */; };
 		A8C4E8BC2A3AC757001A53D6 /* TMTextFieldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E8BB2A3AC757001A53D6 /* TMTextFieldConfig.swift */; };
@@ -253,19 +253,19 @@
 		A85C9DA52A565C0C009A1000 /* TMRectButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMRectButtonConfig.swift; sourceTree = "<group>"; };
 		A85C9DA72A565E16009A1000 /* TMHighlightedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMHighlightedLabel.swift; sourceTree = "<group>"; };
 		A85C9DA92A565F91009A1000 /* TMHighlightedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMHighlightedButton.swift; sourceTree = "<group>"; };
-		A85C9DAB2A5662C4009A1000 /* TMLabelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMLabelConfig.swift; sourceTree = "<group>"; };
+		A85C9DAB2A5662C4009A1000 /* TMBasicLabelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBasicLabelConfig.swift; sourceTree = "<group>"; };
 		A86DE5BE29CDD69800E8282A /* TMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTableView.swift; sourceTree = "<group>"; };
 		A86DE5BF29CDD69800E8282A /* TMScalableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMScalableLabel.swift; sourceTree = "<group>"; };
 		A86DE5C129CDD69800E8282A /* TMPopUpViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPopUpViewCell.swift; sourceTree = "<group>"; };
 		A86DE5C229CDD69800E8282A /* TMPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPopUpView.swift; sourceTree = "<group>"; };
 		A86DE5C829CDDCA600E8282A /* TMInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMInfoView.swift; sourceTree = "<group>"; };
 		A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMInfoViewConfig.swift; sourceTree = "<group>"; };
-		A86DE5CC29CDDEA000E8282A /* TMImageViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMImageViewConfig.swift; sourceTree = "<group>"; };
+		A86DE5CC29CDDEA000E8282A /* TMRectImageViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMRectImageViewConfig.swift; sourceTree = "<group>"; };
 		A86DE5CE29CDDEB900E8282A /* TMRectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMRectImageView.swift; sourceTree = "<group>"; };
 		A87EB1222A3AE73A002D5B6C /* TMSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSelectionView.swift; sourceTree = "<group>"; };
 		A87EB1242A3AE78B002D5B6C /* TMServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMServerView.swift; sourceTree = "<group>"; };
 		A87EB1262A3AE7C9002D5B6C /* TMServerViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMServerViewConfig.swift; sourceTree = "<group>"; };
-		A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMButtonConfig.swift; sourceTree = "<group>"; };
+		A8B7200629BACCB300FD6400 /* TMBasicButtonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBasicButtonConfig.swift; sourceTree = "<group>"; };
 		A8C4E8B72A3AC6F0001A53D6 /* TMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNavigationController.swift; sourceTree = "<group>"; };
 		A8C4E8B92A3AC731001A53D6 /* TMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTextField.swift; sourceTree = "<group>"; };
 		A8C4E8BB2A3AC757001A53D6 /* TMTextFieldConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTextFieldConfig.swift; sourceTree = "<group>"; };
@@ -480,8 +480,8 @@
 				A85C9DA72A565E16009A1000 /* TMHighlightedLabel.swift */,
 				A85C9DA32A565BA5009A1000 /* TMBasicButton.swift */,
 				A85C9DA92A565F91009A1000 /* TMHighlightedButton.swift */,
-				A85C9DAB2A5662C4009A1000 /* TMLabelConfig.swift */,
-				A8B7200629BACCB300FD6400 /* TMButtonConfig.swift */,
+				A85C9DAB2A5662C4009A1000 /* TMBasicLabelConfig.swift */,
+				A8B7200629BACCB300FD6400 /* TMBasicButtonConfig.swift */,
 				A8C4E8B92A3AC731001A53D6 /* TMTextField.swift */,
 				A8C4E8BB2A3AC757001A53D6 /* TMTextFieldConfig.swift */,
 				A86DE5BE29CDD69800E8282A /* TMTableView.swift */,
@@ -492,7 +492,7 @@
 				A86DE5C829CDDCA600E8282A /* TMInfoView.swift */,
 				A86DE5CA29CDDCC600E8282A /* TMInfoViewConfig.swift */,
 				A86DE5CE29CDDEB900E8282A /* TMRectImageView.swift */,
-				A86DE5CC29CDDEA000E8282A /* TMImageViewConfig.swift */,
+				A86DE5CC29CDDEA000E8282A /* TMRectImageViewConfig.swift */,
 				5FAF3F947A38B03DB09E2961E2340F04 /* TMBasicPointView.swift */,
 				C054372A9EA531A2C3DC2B418E75CE81 /* TMBasicPointViewConfig.swift */,
 				90D048C5AED11E678F024D939EF9F649 /* TMPointComparingView.swift */,
@@ -907,7 +907,7 @@
 				A86DE5C729CDD69800E8282A /* TMPopUpView.swift in Sources */,
 				A8C4E8BA2A3AC731001A53D6 /* TMTextField.swift in Sources */,
 				52DD1BD561E1F4BD600BBDAA8357B2AE /* TMBasicPointViewConfig.swift in Sources */,
-				A8B7200829BACCB300FD6400 /* TMButtonConfig.swift in Sources */,
+				A8B7200829BACCB300FD6400 /* TMBasicButtonConfig.swift in Sources */,
 				A85C9DA02A5653E4009A1000 /* TMBasicLabel.swift in Sources */,
 				A8C4E8B82A3AC6F0001A53D6 /* TMNavigationController.swift in Sources */,
 				A86DE5C429CDD69800E8282A /* TMScalableLabel.swift in Sources */,
@@ -930,11 +930,11 @@
 				65C0D401FA02C186C95182743434F4FE /* TMScableView.swift in Sources */,
 				A85C9D9E2A564DA5009A1000 /* TMScalable.swift in Sources */,
 				A87EB1272A3AE7C9002D5B6C /* TMServerViewConfig.swift in Sources */,
-				A86DE5CD29CDDEA000E8282A /* TMImageViewConfig.swift in Sources */,
+				A86DE5CD29CDDEA000E8282A /* TMRectImageViewConfig.swift in Sources */,
 				A86DE5CB29CDDCC600E8282A /* TMInfoViewConfig.swift in Sources */,
 				1A510317EECD7451E3E84BDDD0C36462 /* TMViewController.swift in Sources */,
 				1C7B247AC56F791027C7082766236C5F /* UIViewExtension.swift in Sources */,
-				A85C9DAC2A5662C4009A1000 /* TMLabelConfig.swift in Sources */,
+				A85C9DAC2A5662C4009A1000 /* TMBasicLabelConfig.swift in Sources */,
 				A85C9DA42A565BA5009A1000 /* TMBasicButton.swift in Sources */,
 				A85C9DA22A56569C009A1000 /* TMScalableButton.swift in Sources */,
 				A8C4E8BC2A3AC757001A53D6 /* TMTextFieldConfig.swift in Sources */,

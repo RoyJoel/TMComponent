@@ -32,21 +32,13 @@ open class TMScalableLabel: UILabel, TMScalable {
     }
 
     /// 带闭包的伸缩方法
-    /// - Parameter completionHandler: 动画完成后的动作
-    open func scaleTo(completionHandler: (() -> Void)? = nil) {
+    public func scaleTo(willScaleTo: (() -> Void)? = nil, didScaleTo: (() -> Void)? = nil) {
         toggle.toggle()
-
-        let startPoint = toggle ? originalPoint : newPoint
-        let endPoint = toggle ? newPoint : originalPoint
-        let startBounds = toggle ? originalBounds : newBounds
-        let endBounds = toggle ? newBounds : originalBounds
-
-        addAnimation(startPoint, endPoint, duration, "position", completionHandler: {})
-        addAnimation(startBounds, endBounds, duration, "bounds", completionHandler: {
-            (completionHandler ?? {})()
-        })
-
-        bounds = endBounds
-        layer.position = endPoint
+        
+        if toggle {
+            super.scaleTo(fromBounds: originalBounds, andPosition: originalPoint, toBounds: newBounds, andNewPosition: newPoint, duration: duration, willScaleTo: willScaleTo ?? {}, didScaleTo: didScaleTo ?? {})
+        }else {
+            super.scaleTo(fromBounds: newBounds, andPosition: newPoint, toBounds: originalBounds, andNewPosition: originalPoint, duration: duration, willScaleTo: willScaleTo ?? {}, didScaleTo: didScaleTo ?? {})
+        }
     }
 }

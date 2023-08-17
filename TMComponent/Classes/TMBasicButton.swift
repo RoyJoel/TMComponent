@@ -31,7 +31,7 @@ open class TMBasicButton: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func setupEvent(config: TMButtonConfig) {
+    public func setupEvent(config: TMBasicButtonConfig) {
         button.addTapGesture(config.actionTarget, config.action)
 
         if let image = config.image {

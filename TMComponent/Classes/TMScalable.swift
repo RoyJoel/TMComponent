@@ -22,9 +22,11 @@ protocol TMScalable {
     var duration: CFTimeInterval { get set }
     /// 开关，控制图像伸缩状态
     var toggle: Bool { get set }
+    
+    var lastBeginTime: TimeInterval { get set }
     /// 初始化原始位置与新位置
     func setup(originalBounds: CGRect, originalPoint: CGPoint, newBounds: CGRect, newPoint: CGPoint, duration: CFTimeInterval)
     /// 带闭包的伸缩方法
     /// - Parameter completionHandler: 动画完成后的闭包
-    func scaleTo(completionHandler: (() -> Void)?)
+    func scaleTo(willScaleTo: (() -> Void)?, didScaleTo: (() -> Void)?)
 }

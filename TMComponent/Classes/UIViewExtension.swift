@@ -75,6 +75,106 @@ extension UIView {
         layer.add(animation, forKey: forKey)
         CATransaction.commit()
     }
+    
+    public func scaleTo(lastbeginTime: TimeInterval, fromBounds: CGRect, andPosition: CGPoint, toBounds: CGRect, andNewPosition: CGPoint, duration: CFTimeInterval) {
+        let timer = CADisplayLink()
+        timer.add(to: .main, forMode: .common)
+        
+        var bounds = CGRect()
+        var position = CGPoint()
+        
+        if Date().timeIntervalSince1970 - duration >= lastbeginTime {
+            bounds = fromBounds
+            position = andPosition
+        }else {
+            let elapsed = timer.timestamp - lastbeginTime
+            let progress = CGFloat(elapsed / duration)
+            
+            bounds = CGRect(x: fromBounds.minX - (fromBounds.minX - toBounds.minX) * progress, y: fromBounds.minY - (fromBounds.minY - toBounds.minY) * progress, width: fromBounds.width - (fromBounds.width - toBounds.width) * progress, height: fromBounds.height - (fromBounds.height - toBounds.height) * progress)
+            
+            position = CGPoint(x: andPosition.x - (andPosition.x - andNewPosition.x) * progress, y: andPosition.y - (andPosition.y - andNewPosition.y) * progress)
+        }
+        
+        let boundsAnimation = CABasicAnimation()
+        boundsAnimation.duration = duration
+        boundsAnimation.fromValue = bounds
+        boundsAnimation.toValue = toBounds
+        boundsAnimation.fillMode = .forwards
+        boundsAnimation.isRemovedOnCompletion = false
+        
+        let positionAnimation = CABasicAnimation()
+        positionAnimation.duration = duration
+        positionAnimation.fromValue = position
+        positionAnimation.toValue = andNewPosition
+        positionAnimation.fillMode = .forwards
+        boundsAnimation.isRemovedOnCompletion = false
+
+        CATransaction.begin()
+        CATransaction.setCompletionBlock { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.bounds = toBounds
+            self.layer.position = andNewPosition
+            timer.remove(from: .main, forMode: .common)
+            timer.invalidate()
+        }
+        layer.add(boundsAnimation, forKey: "bounds")
+        layer.add(positionAnimation, forKey: "position")
+        CATransaction.commit()
+        
+    }
+    
+    public func scaleTo(lastbeginTime: TimeInterval, fromBounds: CGRect, andPosition: CGPoint, toBounds: CGRect, andNewPosition: CGPoint, duration: CFTimeInterval,willScaleTo: @escaping () -> Void, didScaleTo: @escaping () -> Void) {
+        
+        let timer = CADisplayLink()
+        timer.add(to: .main, forMode: .common)
+        
+        var bounds = CGRect()
+        var position = CGPoint()
+        
+        if Date().timeIntervalSince1970 - duration >= lastbeginTime {
+            bounds = fromBounds
+            position = andPosition
+        }else {
+            let elapsed = timer.timestamp - lastbeginTime
+            let progress = CGFloat(elapsed / duration)
+            
+            bounds = CGRect(x: fromBounds.minX - (fromBounds.minX - toBounds.minX) * progress, y: fromBounds.minY - (fromBounds.minY - toBounds.minY) * progress, width: fromBounds.width - (fromBounds.width - toBounds.width) * progress, height: fromBounds.height - (fromBounds.height - toBounds.height) * progress)
+            
+            position = CGPoint(x: andPosition.x - (andPosition.x - andNewPosition.x) * progress, y: andPosition.y - (andPosition.y - andNewPosition.y) * progress)
+        }
+        
+        let boundsAnimation = CABasicAnimation()
+        boundsAnimation.duration = duration
+        boundsAnimation.fromValue = bounds
+        boundsAnimation.toValue = toBounds
+        boundsAnimation.fillMode = .forwards
+        boundsAnimation.isRemovedOnCompletion = false
+        
+        let positionAnimation = CABasicAnimation()
+        positionAnimation.duration = duration
+        positionAnimation.fromValue = position
+        positionAnimation.toValue = andNewPosition
+        positionAnimation.fillMode = .forwards
+        boundsAnimation.isRemovedOnCompletion = false
+        
+        CATransaction.begin()
+        CATransaction.setCompletionBlock { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.bounds = toBounds
+            self.layer.position = andNewPosition
+            didScaleTo()
+            timer.remove(from: .main, forMode: .common)
+            timer.invalidate()
+        }
+        willScaleTo()
+        layer.add(boundsAnimation, forKey: "bounds")
+        layer.add(positionAnimation, forKey: "position")
+        CATransaction.commit()
+    }
 
     public func getParentViewController() -> UIViewController? {
         for view in sequence(first: superview, next: { view in

@@ -1,5 +1,5 @@
 //
-//  TMLabelConfig.swift
+//  TMBasicLabelConfig.swift
 //  TMComponent
 //
 //  Created by Jason Zhang on 2023/7/6.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class TMLabelConfig {
+open class TMBasicLabelConfig {
     /// 标题
     public var title: String
     /// 字体

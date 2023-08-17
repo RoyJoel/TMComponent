@@ -29,7 +29,7 @@ open class TMBasicLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func setupEvent(config: TMLabelConfig) {
+    public func setupEvent(config: TMBasicLabelConfig) {
         label.text = config.title
         label.font = config.font
     }

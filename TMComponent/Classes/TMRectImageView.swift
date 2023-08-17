@@ -1,5 +1,5 @@
 //
-//  TMImageView.swift
+//  TMRectImageView.swift
 //  TMComponent
 //
 //  Created by Jason Zhang on 2023/3/24.
@@ -20,7 +20,7 @@ open class TMRectImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func setupEvent(config: TMImageViewConfig) {
+    public func setupEvent(config: TMRectImageViewConfig) {
         image = UIImage(data: config.image)
         contentMode = config.contentMode
     }

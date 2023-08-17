@@ -1,5 +1,5 @@
 //
-//  TMButtonConfig.swift
+//  TMBasicButtonConfig.swift
 //  TennisMoment
 //
 //  Created by Jason Zhang on 2023/2/17.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class TMButtonConfig {
+open class TMBasicButtonConfig {
     /// 图片
     public var image: UIImage?
     /// 标题
